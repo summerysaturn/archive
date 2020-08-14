@@ -7,7 +7,7 @@
 
 ### Midi-to-VirtualPiano
 
-[Link to Original Readme](Midi-to-VirtualPiano/README.me)
+[Link to Original Readme](Midi-to-VirtualPiano/README.md)
 
 This project is a python script that attempts to convert a Midi file into a playable (depending on the source) VirtualPiano sheet. This is done by interpreting the Midi file byte by byte, using a reference for the format to work properly.
 
