@@ -1,0 +1,75 @@
+= Test Evidence
+:bibliography-database: u2.bib
+:bibliography-style: harvard-cite-them-right
+:bibliography-locale: en-GB
+:bibliography-sort: []
+:icons: font
+:imagesdir: t3-img
+:data-uri:
+:pdf-theme: quote.yml
+:pdf-themesdir: /home/lyla/Documents/a2-s2-college/U6-done/
+Charlotte Ward
+
+== Test 1
+
+Communication between the same site (Site 2). This test utilises `S2 PC0` and `S2 PC1`.
+
+`S2 PC0` -> `S2 PC1`
+
+`20.0.2.0` -> `20.0.2.1`
+
+This screenshot shows the ping command entered into S2 PC0, along with the IP.
+
+image::test1-0-start.png[]
+
+Here you can see the returned packet in simulation mode, along with evidence of a returned ping in the console.
+
+image::test1-1-success.png[]
+
+<<<
+
+== Test 2
+
+Communication between the same site (Site 3). This test utilises `S3 PC0` and `S3 PC1`.
+
+`S3 PC0` -> `S3 PC1`
+
+`30.0.2.0` -> `30.0.2.1`
+
+This screenshot shows the packet reaching the target PC (S3 PC1), ready to be returned to the first PC.
+
+image::test2-0-target.png[]
+
+Here is the returned packet shown, along with a reply in the console.
+
+image::test2-1-success.png[]
+
+<<<
+
+== Test 3
+
+Communication across sites (Site 2 to Site 3). This test utilises `S2 PC0` and `S3 PC0`.
+
+`S2 PC0` -> `S3 PC0`
+
+`20.0.2.0` -> `30.0.2.0`
+
+This screenshot shows the start of the test, with the ping command and the packet still at S2 PC0.
+
+image::test3-0-start.png[]
+
+The first packet is dropped by the gateway router for Site 2.
+
+image::test3-1-dropped.png[]
+
+The second packet is dropped by the gateway router for Site 3.
+
+image::test3-2-dropped.png[]
+
+The third packet reaches the target destination (S3 PC0).
+
+image::test3-3-reaches.png[]
+
+The third packet returns correctly.
+
+image::test3-4-success.png[]

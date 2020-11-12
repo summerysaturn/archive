@@ -1,0 +1,30 @@
+= Guide for Stuff
+:bibliography-database: u2.bib
+:bibliography-style: harvard-cite-them-right
+:bibliography-locale: en-GB
+:bibliography-sort: []
+:icons: font
+:imagesdir: img
+:data-uri:
+Charlotte Ward
+
+== Task 1
+
+Show your design for the network that includes the main branch and the three smaller branches along with the equipment held at each site and your IP addressing plan for the sites. Include servers, desktop machines, laptops, switches, routers, Wireless APs, connections and any other hardware required along with configurations required for each item of hardware.
+
+You can use Packet Tracer to complete your design and present the result in a Word/PDF document.
+
+Use packet tracer to:
+
+- Create four premises with equipment at each site (servers, desktops, laptops, switches, routers, APs, connections, etc.)
+- One site is the "main" site that all others should connect to.
+
+== Task 2
+
+== Task 3
+
+== Task 4
+
+== Reference List
+
+bibliography::[]

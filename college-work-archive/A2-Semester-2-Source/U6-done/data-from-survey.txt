@@ -1,0 +1,190 @@
+============================================================ Intro Data ========
+
+Age
+20-29 - 10
+30-39 - 14
+40+   - 40
+
+Time spent per day
+<1 hrs  - 14
+1-2 hrs - 23
+2-4 hrs - 14
+>4 hrs  - 13
+
+============================================================ Group 1 ===========
+
+Group 1 Response
+Commonly Used   - 38
+Previously Used - 17
+Not Used        -  9
+85.94% of respondants gave further data for group 1
+
+Group 1 Platform Distribution
+Instagram - 1
+Twitter   - 1
+Youtube   - 15
+Pinterest - 6
+TikTok    - 1
+Unknown   - 38
+
+Group 1 Social Response
+Very Negative  -  0
+Negative       -  1
+Neutral/Mixed  - 24
+Positive       - 22
+Very Positive  -  0
+No interaction -  9
+
+Positivity Index - 61.17%
+
+Group 1 Mental Health Response
+Very Negative -  1
+Negative      - 11
+Neutral		    - 11
+Positive      - 28
+Very Positive -  4
+
+Positivity Index - 60.45%
+
+Group 1 News Response
+Very Negative -  0
+Negative      - 10
+Neutral       -  7
+Positive      - 35
+Very Positive -  3
+
+Positivity Index - 64.09%
+
+Further comments worth noting
+"I have curated my lists of followers and followings to make sure that all those people included are generally a positive influence for me (or at least interesting!) so while this does turn my social media platforms into echo chambers, I am aware of this. I feel this is the best way for me to use these platforms in a healthy way."
+"By being careful with who I ask to connect with and who I accept into my online social circles I generally see positivity, support for others and kindness."
+"I'm using platforms for different things - Twitter for news and to be honest funny stuff so I ignore or avoid horrible stuff, especially at the moment. I use youtube for how to fix things and for things like yoga and workouts and livestreams of plays and music, so I find it really helpful and positive. I think maybe it would be negative if link in with info that is depressing so have to be careful?"
+"Currently social media help me feel connected; a lot of humour is being shared - plus offers of help.  These are, however, very strange times - looking back on lockdown, people who were complete technophobes have now mastered zoom; are looking to connect through media they never even heard of before."
+
+Conclusions:
+These responses show that social media usage in Group 1, relating to media like images and videos, generally has a positive self-reported effects on mental health, social capital and the opinion held on news and current events.
+The further comments in this section had a similar theme, suggesting that social media can be self-moderated in order to prevent negative outcomes.
+
+Average Positivity Index - 61.91%
+
+============================================================ Group 2 ===========
+
+Group 2 Response
+Commonly Used   - 54
+Previously Used -  5
+Not Used        -  5
+92.19% of respondants gave further data for group 2
+
+Group 2 Platform Distribution
+Facebook  - 27
+Instagram - 28
+LinkedIn  -  3
+Twitter   - 20
+Reddit    -  3
+Medium    -  1
+Unknown   - 14
+
+Group 2 Social Response
+Very Negative  -  0
+Negative       -  4
+Neutral/Mixed  - 19
+Positive       - 35
+Very Positive  -  0
+No interaction -  0
+
+Positivity Index - 63.36%
+
+Group 2 Mental Health Response
+Very Negative  -  1
+Negative       - 13
+Neutral        - 10
+Positive       - 32
+Very Positive  -  3
+
+Positivity Index - 59.75%
+
+Group 2 News Response
+Very Negative  -  1
+Negative       - 20
+Neutral        - 11
+Positive       - 24
+Very Positive  -  3
+
+Positivity Index - 53.39%
+
+Further comments worth noting
+"I think it's important to acknowledge and to be aware of how social media affects you and that it's probably best to walk away from it if on balance, it's more negative than positive. Also controlling whose posts you view is really useful."
+"I think it's important to acknowledge and to be aware of how social media affects you and that it's probably best to walk away from it if on balance, it's more negative than positive. Also controlling whose posts you view is really useful."
+"As with previous comments have to be careful don't spend too much time and I do look at more positive stuff and feel if getting negative have to stop using it. for a bit but it is bit addictive."
+"You need to find the right accounts to follow and not delve too far into other people comments. I do have a more negative response to twitter earlier in the year but I had a break, cleared down some accounts and it’s been better since. Regular social media detox’s for a few weeks have been a useful tool at key times"
+"The effect of such platforms is highly affected by what pages you follow. some pages/users are heavily focussed on negativity, others on positivity"
+
+Conclusions:
+It seems as though generally this type of social media is positive for mental health and social capital. What differs here is that these platforms are not positive for the opinion held on news and current events, potentially linked to the accuracy of what's posted (as described in the long-form answers).
+Similar to Group 1, it seems as though some individuals have the philosophy that social media platforms in Group 2 should be self-moderated, that the accuracy of sources should be questioned, and that the people engaged should be carefully considered.
+
+Average Positivity Index - 58.83%
+
+============================================================ Group 3 ===========
+
+Group 3 Response
+Commonly Used   - 59
+Previously Used -  1
+Not Used        -  4
+93.75% of respondants gave further data for group 3
+
+Group 3 Platform Distribution
+Snapchat  -  3
+WhatsApp  - 44
+Messenger - 30
+Telegram  -  2
+Discord   -  3
+Unknown   - 16
+
+Group 3 Social Response
+Very Negative  -  0
+Negative       -  1
+Neutral/Mixed  -  6
+Positive       - 52
+Very Positive  -  1
+No interaction -  0
+
+Positivity Index - 72.08%
+
+Group 3 Mental Health Response
+Very Negative  -  0
+Negative       -  2
+Neutral/Mixed  - 10
+Positive       - 36
+Very Positive  - 12
+
+Positivity Index - 74.17%
+
+Group 3 News Response
+Very Negative  -  0
+Negative       -  5
+Neutral/Mixed  - 18
+Positive       - 28
+Very Positive  -  9
+
+Positivity Index - 67.08%
+
+Further comments worth noting
+"These are positive as you can choose who you interact with and when without the noise of news and advertising. They allow connection without intrusion"
+"I love connecting with family and friends, so positive"
+"During Lockdown they are keeping me connected to family and dear friends."
+(Fewer significant comments)
+
+Conclusions:
+Incredibly consistent social capital improvement, with only a single negative response. This group seems to be the most positive for mental health
+
+Average Positivity Index - 71.11%
+
+
+
+
+
+
+
+
+

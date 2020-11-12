@@ -1,0 +1,256 @@
+:bibliography-database: u6.bib
+:bibliography-style: harvard-cite-them-right
+:bibliography-locale: en-GB
+:bibliography-sort: []
+:icons: font
+:pdf-theme: quote.yml
+:pdf-themesdir: /home/lyla/Documents/a2-s2-college/U6/
+
+= Reflective Review
+
+"Do digital technologies improve life or distract from it? The impacts of social media on mental health and wellbeing."
+
+Charlotte Ward
+
+== Research Evaluation
+
+This research project began with the question "Do digital technologies improve life or distract from it? The efficacy of products and features specifically designed to improve health and wellbeing". In the early stages of my project, I transformed this title into the title outlined above, focussing on the effects social media can have on the individual.
+
+The first phase of this project involved was involved planning scope and management, which I felt was fairly effective in this case. Those documents were concise, describing a clear scope thanks to the strong title. The project scope statement document has a few sections which I will outline as follows:
+
+.Project Scope Statement Analysis
+[cols="2,10a"]
+|===
+|Section |Review
+
+|Project Objectives
+|
+This section in particular is fairly simple, explaining a key outline of the goals of the project. The established goal is to draw connections between social media use and wellbeing, using quantitative and qualitative data gathered in a survey. What this section lacks, in my opinion, is a further explanation of my objectives with exactly what connections I'm expecting to be able to draw:
+
+- Is time-spent on social media relevant to the impact social media can have? My study shows that this question is relevant and that there is an impact, though it's still unclear. This being said, the scope statement and management plan don't ask whether this will be analysed.
+- Does this relate to the platforms used on social media? The survey was split based on platform, but that also wasn't included in this section of the scope statement or management plan.
+- What metrics will I be analysing for the impacts social media has? Is this specifically about mental health, or can personal relationships or understanding of current events be relevant? My literature review found that these topics were relevant to mental health, though the initial plan didn't analyse what type of analysis would be involved.
+
+|Project Scope Definitions Statement
+|
+This section of the statement is fairly congruent with the work produced, and I feel it gets across the message of the topic properly. The management plan extends this portion of the document, defining a social media platform more explicitly. Overall I'm fairly happy with this section.
+
+|Project Deliverables
+|
+The focus here on charts is perhaps fairly naive, as the feedback I got was to include a report and a poster as deliverables, which was added later on into the project. In spite of this, the revised deliverables statement is fairly robust, extending the objectives (however loosely defined above) with a metric for what I'm going to deliver.
+
+|Acceptance Criteria
+|
+This section is fairly loosely defined too, as there is more to a project than just identifying a connection; the literature review, for example, established some relevant knowledge to the research which could serve to aid future research in the same subject. This being said, the acceptance of a mixed or non-significant result is good here, as that would still constitute research and be successful.
+
+|Constraints
+|
+I feel as though this section could be more detailed, outlining additional constraints outside of statistical significance. However, this section correctly identifies that stratified groups of data could be merged together in the case that too few responses come back.
+
+|Assumptions
+|
+I can't see anything wrong with this section, it honestly outlines what I thought going into the project. Perhaps it should be mentioned that these assumptions coloured my implementation of the survey, and a potential reproduction on this topic should avoid making the same mistakes in that regard; focussing on one of the specific questions outlined at the end of the report may be most useful.
+
+|Project Milestones (w/dates)
+|
+However woefully optimistic, this set of milestones proved to be fairly realistic. I'm about 10 days late on the reflective report going by this milestone list, but I don't see that as a failing of the planning necessarily: I purposefully crunched down the time for the reflective report as I knew that, if I needed additional time, it would be available as a contingency.
+|===
+
+<<<
+
+.Project Management Plan Analysis
+[cols="2,10a"]
+|===
+|Section |Review
+
+|Project Aims
+|
+This section simply extends the aims outlined in the scope statement, so the same criticism applies. This being said, the extensions added in this document are well implemented, as they extend my understanding and definition of what the aims are.
+
+|Project Scope
+|
+This section, when compared with the scope statement, is something I'm very happy with. The explicit definition of what exactly a social media platform is in this context is especially useful, as I feel defining the scope without relying on an individual's preconceptions is important.
+
+- Blogging/Microblogging
+- Personal Messaging
+- Content Sharing
+
+These three platforms types persisted as a key area of the report, aided by the definition.
+
+Perhaps listing the social media sites that don't apply is a little more nebulously defined? The argument I was trying to aim for was that explicitly social sites would be included, while professional sites wouldn't. Medium is an editorial publishing platform, which fits the professional site criteria. Explaining this would have helped make the scope even more explicit, I feel.
+
+|Project Deliverables
+|
+Again, this section effectively mirrors the section in the scope statement, and the same criticism applies. The feedback of adding the report and poster to this section was similarly helpful.
+
+|Project Cost
+|
+While completely speculative, this section illustrates how I feel the project would be conducted if it had a budget. The advertisement of the survey is a key point as social media advertising is very good for targeting a specific demographic. This being said, there isn't much detail here as to what I could have added to extend the project overall.
+
+|Resources Required
+|
+This section is fairly dry too, as I didn't outline software/hardware requirements, which could have easily made this section more detailed. This being said, the mention of the contacts is a good addition, as it helps to explain how I got responses to the survey.
+
+|Project Schedule & Milestones
+|
+Being based off the project scope statement's milestone plan, this section is similarly optimistic and naive. The phases outlined are, I feel, accurate to the phases of the project, with three major internal phase and one external phase, matching how the project feels. The work breakdown structure shows the key components to the project as well as which milestone they relate to, which I feel is perfect.
+
+The Gantt chart here is also well implemented, showing the deadlines, concurrency, and pre-requisites in an interesting way. The online presentation could be further illustrated to show that it's a hard-deadline, but overall this section gets the point across well, I feel.
+
+|Communication Plan
+|
+Again, fairly concise, and I feel it says what I wanted to say. I relied less on Dan for this project than I thought I would, but overall this plan illustrated that I knew I could contact him or Linda if I needed to.
+
+|Risk Management
+|
+This section is fairly short as I failed to identify many risks; speaking honestly, the only risk I thought was likely relates to energy and motivation, for which I included a section here about the prioritization of the poster. Perhaps this section should have been expanded with additional risks, but for the duration of the project nothing new really came up.
+
+|Quality Guidelines
+|
+This section solves what was wrong in the project aims in the scope statement! A definition of the possible observations here really helped me in producing the literature review and report, as I had specific outcomes to focus on. These three bullet points were included in the report in some form.
+
+This section also relates the report back to the college, explaining that the gathered data could be especially useful for advice about social media for younger people. This additional definition greatly helped me form the recommendations in the report itself.
+|===
+
+<<<
+
+.Questionnaire Analysis
+[cols="2,10a"]
+|===
+|Section |Review
+
+|General Structure
+|
+The general structure of this survey is explained in the report document, but for clarity I'm going to recap here:
+
+image::flowchart.png[pdfwidth=40%]
+
+This flowchart shows the general branching included in the survey, with the branching repeating for each group of social media platforms. The primary criticism here is that this branching was implemented wrong for the 1st group of questions, where individuals that answered yes to "Do you frequently use platforms" question would instead skip straight to the social effects question. For this reason, the data I gathered on the platforms individuals use is almost useless, as the first group had very incomplete data. Instead, only those who had "Have you frequently used platforms" question would be asked about their platform usage.
+
+This is particularly disappointing as it meant I couldn't really draw any conclusions based on platform use in the report. This being said, I'm happy with the overall outcome, I just think it might've gone differently if I had more complete data.
+
+Speaking more generally, I'm personally very happy with this branching, as I feel it lets individuals skip over sections if they have no experience, which is precisely what I want.
+
+|Specific Questions
+|
+To recap, the specific questions included were:
+
+. "How do these platforms impact how you feel about your overall mental health?"
+. "How do these platforms impact how you interact with people you know?"
+. "How do these platforms affect how you feel about news and current events?"
+
+These questions are fairly neutral, and I feel as though they don't push the respondent in a specific direction while answering. This being said, they're fairly vague and have redundant portions, so potentially they could have been reworded to be more concise.
+
+Overall, I think the questions asked work _well enough_ for the quality of the overall research.
+
+|Reach & Further Comments
+|
+What's worth noting about this survey is that the majority of the respondents were 40+, with 40 respondents compared with only 24 for 20-39. I purposefully designed this survey to be aimed at lower ages, however the reach of the survey presumably ended up with older individuals. Additionally, the age brackets were:
+
+- 20-29
+- 30-39
+- 40+
+
+Which I feel could have been greatly improved upon. The majority of the responses from younger individuals came towards the end of the survey lifespan, thanks to some posts requesting younger people and children to answer too. Additionally, I feel as though an "under 20" bracket would have been useful.
+
+Interestingly, because I produced the literature review alongside the survey (rather than before it) thanks to time constraints, I didn't find out that gender could be an important metric to gather in time for the survey being sent out. The literature review contained a few articles that claimed that gender could be important for this kind of research, which I presumed would be mostly irrelevant.
+
+Overall, this section is easily the most flawed of the entire research. It's my first survey for academic purposes, so some difficulty is to be expected, but completely redesigning this section would be especially useful in establishing more meaningful research.
+
+|===
+
+<<<
+
+.Literature Review Analysis
+[cols="2,10a"]
+|===
+|Section |Review
+
+|Themes
+|
+I'm very happy with the three themes outlined in the literature review, which were carried forward into the survey and the greater report. However, speaking candidly, I'm not entirely sure if these are the perfect themes for the greater project. I'm not sure if the project would have turned out better if the themes had been different, more concise, more explicit, or more varied. I almost feel as if these themes are somewhat arbitrary? Fueled by my expectations of the subject rather than established through logical definitions.
+
+|Conclusions & Connections
+|
+The literature analysis in this portion of the report is middlingly executed; I feel as though I analysed each report sequentially rather than relating them together as well as I could? This might relate to my recent energy levels too, as I found it difficult to truly keep on top of this portion of the project due to how dry the reports were. Under this assumption, I'm happy with the quality of the work, as it's certainly 'good enough' given the wider context.
+
+I feel I did a good job analysing the literature itself, however; reading and drawing conclusions from the articles and reports wasn't particularly difficult, and it definitely helped me establish an overall trend in the perception and impact of social media as it is currently understood.
+
+|Literature Choices
+|
+Perhaps the literature choices weren't as good as they could have been? I only used Google Scholar to identify sources, which wasn't the full toolkit that I had available. Additionally, I feel as though my ability at finding and relating research is still developing; this project has certainly contributed to my ability, though I'm not completely confident yet.
+|===
+
+<<<
+
+.Poster & Presentation Analysis
+[cols="2,10a"]
+|===
+|Section |Review
+
+|Poster
+|
+image::CollegePoster.png[pdfwidth=60%]
+
+This poster has some good qualities, explaining each theme in a small amount of detail, explaining the positivity index (which I'm very happy with), the overall structure, and the results. The layout of this poster isn't _perfect_, as the positivity index section should be underneath the Survey Findings heading. I'm still generally happy with the layout, however.
+
+The use of colour in particular is fairly effective, splitting up the page based on key areas: the themes, and the chart. The subdued information in the bottom right for the index calculation is also useful, as it helps contextualize the chart.
+
+|Presentation
+|
+The presentation was easily the best part of this project, in my opinion, as I managed to produce a competent poster in time, and describe the project in-depth. Dan, Laura and John all showed up to ask me detailed questions about the project, and I felt I gave perfectly competent answers that were engaging and interesting. The inclusion of the description of the positivity index model that I used also greatly contributed to this section.
+
+Overall I'm very happy with the poster and presentation.
+
+|===
+
+<<<
+
+.Report Analysis
+[cols="2,10a"]
+|===
+|Section |Review
+
+|Layout
+|
+The overall layout of the report was inspired by the brief alongside additional literature. The brief asked for an Introduction, Literature Review, Research Findings, Analysis and a Conclusion. I adapted this into:
+
+* Abstract
+* Literature Review
+** Effects on Individual Mental Health
+** Effects on the Understanding of News and Current Events
+** Effects on Personal Relationships
+** Literature Review Conclusion
+* Methodology
+* Results
+* Discussion
+* Conclusion & Recommendations
+
+I feel this adaptation is much more in-line with the standard layout and methodology for research, with the additional congruence making it more easily understood for those familiar with research.
+
+Overall, about 50% of the report was in the Literature Review section, with the other 50% being original to the report. I feel as though simply copying the content from the literature review (which was originally a separate document) was functional, though I worry that it would've been better if I wrote it as if it were going to be integrated from the get-go.
+
+|Abstract
+|
+This is perhaps the last iteration of the 'Project Aims' section, expanding upon the aims and including information about the overall outcomes from the report. Additionally, it's easily the best implementation as I had a good idea of how the project was coming along when I wrote it, it's the most concise, and it accurately describes the project.
+
+|Literature Review
+|
+See _Table 4. Literature Review Analysis_.
+
+|Methodology
+|
+This methodology section outlines the survey using the correct terminology and in a detailed way. It contains a flowchart for the branching, checkbox graphics for the answer pool, definitions of each group, the three questions asked (and why); It's perfectly descriptive and I can't think of how I'd improve it a second time around, without also changing the survey.
+
+|Results & Discussion
+|
+The results section outlines the model I utilized to analyse the model, along with the tables of data (alongside their calculated values). What isn't included here is the results from the amount of time spent on social media, but that was included in the Discussion subheading. It likely should have been integrated better in with the results section, however it was included either way.
+
+Additionally the Discussion section analyses the potential meaning behind the results, focussing on the numeric values, relating it back to some literature, then listing the qualitative data that is relevant to the conclusion. This section is detailed, though I worry it's slightly less coherent than the rest of the paper, as it took multiple days to produce; the topics may not all flow together.
+
+|Conclusion & Recommendations
+|
+Unfortunately, I feel this section is far less dense than it should be. The overall length of the conclusion isn't so bad, but the content is somewhat vague, reflecting the incomplete nature of the conclusions presented in the overall project. The recommendations accurately reflects the opinions that I have based on the research. I feel that the recommendations would be stronger if the results were more conclusive, however.
+
+The density of this section likely relates to the feelings of burnout and fatigue I have had, so given the circumstances I'm happy that the report turned out as well as it did. Perhaps a potential recreation or continuation of this won't suffer from the same problems, as it relates to current circumstances and ability, which can only improve with time.
+|===

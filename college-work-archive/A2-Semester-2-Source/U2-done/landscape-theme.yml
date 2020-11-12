@@ -1,0 +1,9 @@
+extends: default
+page:
+  layout: landscape
+  size: [500,1000]
+admonition:
+  icon:
+    note:
+      name: fas-comment
+      stroke-color: 62abfa

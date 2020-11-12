@@ -1,0 +1,2388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<meta name="author" content="Do digital technologies improve life or distract from it? The impacts of social media on mental health and wellbeing.">
+<title>Literature Review</title>
+<style>
+@import url(
+  //fonts.googleapis.com/css?family=Lato:400,
+  700,
+  700italic,
+  400italic
+);
+@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.0/css/font-awesome.css);
+/* Inspired by the O'Reilly typography and the Atlas user manual | https://oreilly.com */
+/* normalize.css v2.1.1 | MIT License | git.io/normalize */
+/* ========================================================================== HTML5 display definitions ========================================================================== */
+/** Correct `block` display not defined in IE 8/9. */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/** Correct `inline-block` display not defined in IE 8/9. */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/** Address styling not present in IE 8/9. */
+[hidden] {
+  display: none;
+}
+
+/* ========================================================================== Base ========================================================================== */
+/** 1. Prevent system color scheme's background color being used in Firefox, IE, and Opera. 2. Prevent system color scheme's text color being used in Firefox, IE, and Opera. 3. Set default font family to sans-serif. 4. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+html {
+  background: #fff; /* 1 */
+  color: #000; /* 2 */
+  font-family: sans-serif; /* 3 */
+  -ms-text-size-adjust: 100%; /* 4 */
+  -webkit-text-size-adjust: 100%; /* 4 */
+}
+
+/** Remove default margin. */
+body {
+  margin: 0;
+}
+
+/* ========================================================================== Links ========================================================================== */
+/** Address `outline` inconsistency between Chrome and other browsers. */
+a:focus {
+  outline: thin dotted;
+}
+
+/** Improve readability when focused and also mouse hovered in all browsers. */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ========================================================================== Typography ========================================================================== */
+/** Address variable `h1` font-size and margin within `section` and `article` contexts in Firefox 4+, Safari 5, and Chrome. */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/** Address styling not present in IE 8/9, Safari 5, and Chrome. */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/** Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+b,
+strong {
+  font-weight: bold;
+}
+
+/** Address styling not present in Safari 5 and Chrome. */
+dfn {
+  font-style: italic;
+}
+
+/** Address differences between Firefox and other browsers. */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/** Address styling not present in IE 8/9. */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/** Correct font family set oddly in Safari 5 and Chrome. */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/** Improve readability of pre-formatted text in all browsers. */
+pre {
+  white-space: pre-wrap;
+}
+
+/** Set consistent quote types. */
+q {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+/** Address inconsistent and variable font size in all browsers. */
+small {
+  font-size: 80%;
+}
+
+/** Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ========================================================================== Embedded content ========================================================================== */
+/** Remove border when inside `a` element in IE 8/9. */
+img {
+  border: 0;
+}
+
+/** Correct overflow displayed oddly in IE 9. */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ========================================================================== Figures ========================================================================== */
+/** Address margin not present in IE 8/9 and Safari 5. */
+figure {
+  margin: 0;
+}
+
+/* ========================================================================== Forms ========================================================================== */
+/** Define consistent border, margin, and padding. */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/** 1. Correct `color` not being inherited in IE 8/9. 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/** 1. Correct font family not being inherited in all browsers. 2. Correct font size not being inherited in all browsers. 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome. */
+button,
+input,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/** Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+button,
+input {
+  line-height: normal;
+}
+
+/** Address inconsistent `text-transform` inheritance for `button` and `select`. All other form control elements do not inherit `text-transform` values. Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+. Correct `select` style inheritance in Firefox 4+ and Opera. */
+button,
+select {
+  text-transform: none;
+}
+
+/** 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Correct inability to style clickable `input` types in iOS. 3. Improve usability and consistency of cursor style between image-type `input` and others. */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/** Re-set default cursor for disabled elements. */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/** 1. Address box sizing set to `content-box` in IE 8/9. 2. Remove excess padding in IE 8/9. */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/** 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome. 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome (include `-moz` to future-proof). */
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/** Remove inner padding and search cancel button in Safari 5 and Chrome on OS X. */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/** Remove inner padding and border in Firefox 4+. */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/** 1. Remove default vertical scrollbar in IE 8/9. 2. Improve readability and alignment in all browsers. */
+textarea {
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
+}
+
+/* ========================================================================== Tables ========================================================================== */
+/** Remove most spacing between table cells. */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 100%;
+}
+
+body {
+  background: white;
+  color: #222222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: auto;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:focus {
+  outline: none;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+object,
+embed {
+  height: 100%;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object {
+  max-width: none !important;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.hide {
+  display: none;
+}
+
+.antialiased,
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+select {
+  width: 100%;
+}
+
+p.lead,
+.paragraph.lead > p,
+#preamble > .sectionbody > .paragraph:first-of-type p {
+  font-size: 1.21875em;
+  line-height: 1.6;
+}
+
+.subheader,
+#content #toctitle,
+.admonitionblock td.content > .title,
+.exampleblock > .title,
+.imageblock > .title,
+.videoblock > .title,
+.listingblock > .title,
+.literalblock > .title,
+.openblock > .title,
+.paragraph > .title,
+.quoteblock > .title,
+.sidebarblock > .title,
+.tableblock > .title,
+.verseblock > .title,
+.dlist > .title,
+.olist > .title,
+.ulist > .title,
+.qlist > .title,
+.hdlist > .title,
+.tableblock > caption {
+  line-height: 1.4;
+  color: #191919;
+  font-weight: 300;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+/* Typography resets */
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+#toctitle,
+.sidebarblock > .content > .title,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+}
+
+/* Default Link Styles */
+a {
+  color: #1f3c99;
+  text-decoration: none;
+  line-height: inherit;
+}
+a:hover,
+a:focus {
+  color: #1b3484;
+}
+a img {
+  border: none;
+}
+
+/* Default paragraph styles */
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 1.25em;
+  text-rendering: optimizeLegibility;
+}
+p aside {
+  font-size: 0.875em;
+  line-height: 1.35;
+  font-style: italic;
+}
+
+/* Default header styles */
+h1,
+h2,
+h3,
+#toctitle,
+.sidebarblock > .content > .title,
+h4,
+h5,
+h6 {
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #191919;
+  text-rendering: optimizeLegibility;
+  margin-top: 1em;
+  margin-bottom: 0.45em;
+  line-height: 1.2125em;
+}
+h1 small,
+h2 small,
+h3 small,
+#toctitle small,
+.sidebarblock > .content > .title small,
+h4 small,
+h5 small,
+h6 small {
+  font-size: 60%;
+  color: #666666;
+  line-height: 0;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+h3,
+#toctitle,
+.sidebarblock > .content > .title {
+  font-size: 1.125em;
+}
+
+h4 {
+  font-size: 0.75em;
+}
+
+h5 {
+  font-size: 1.125em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+hr {
+  border: 0px;
+  border-top: 1px dashed #d8d8d8;
+  clear: both;
+  margin: 1.25em 0 1.1875em;
+  height: 0;
+}
+
+/* Helpful Typography Defaults */
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+strong,
+b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+small {
+  font-size: 60%;
+  line-height: inherit;
+}
+
+code {
+  font-family: Consolas, "Monaco", "Liberation Mono", Courier, monospace;
+  font-weight: normal;
+  color: #191919;
+}
+
+/* Lists */
+ul,
+ol,
+dl {
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 1.25em;
+  list-style-position: outside;
+  font-family: inherit;
+}
+
+ul,
+ol {
+  margin-left: 0;
+}
+
+/* Unordered Lists */
+ul li ul,
+ul li ol {
+  margin-left: 1.25em;
+  margin-bottom: 0;
+  font-size: 1em; /* Override nested font-size change */
+}
+ul.square li ul,
+ul.circle li ul,
+ul.disc li ul {
+  list-style: inherit;
+}
+ul.square {
+  list-style-type: square;
+}
+ul.circle {
+  list-style-type: circle;
+}
+ul.disc {
+  list-style-type: disc;
+}
+ul.no-bullet {
+  list-style: none;
+}
+
+/* Ordered Lists */
+ol li ul,
+ol li ol {
+  margin-left: 1.25em;
+  margin-bottom: 0;
+}
+
+/* Definition Lists */
+dl dt {
+  margin-bottom: 0.3125em;
+  font-weight: normal;
+}
+dl dd {
+  margin-bottom: 1.25em;
+}
+
+/* Abbreviations */
+abbr,
+acronym {
+  text-transform: uppercase;
+  font-size: 90%;
+  color: #191919;
+  border-bottom: 1px dotted #dddddd;
+  cursor: help;
+}
+
+abbr {
+  text-transform: none;
+}
+
+/* Blockquotes */
+blockquote {
+  margin: 0 0 1.25em;
+  padding: 0.5625em 1.25em 0 1.1875em;
+  border-left: 1px solid #dddddd;
+}
+blockquote cite {
+  display: block;
+  font-size: 0.8125em;
+  color: #4c4c4c;
+}
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+blockquote cite a,
+blockquote cite a:visited {
+  color: #4c4c4c;
+}
+
+blockquote,
+blockquote p {
+  line-height: 1.4;
+  color: #191919;
+}
+
+/* Microformats */
+.vcard {
+  display: inline-block;
+  margin: 0 0 1.25em 0;
+  border: 1px solid #dddddd;
+  padding: 0.625em 0.75em;
+}
+.vcard li {
+  margin: 0;
+  display: block;
+}
+.vcard .fn {
+  font-weight: bold;
+  font-size: 0.9375em;
+}
+
+.vevent .summary {
+  font-weight: bold;
+}
+.vevent abbr {
+  cursor: auto;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  padding: 0 0.0625em;
+}
+
+@media only screen and (min-width: 768px) {
+  h1,
+  h2,
+  h3,
+  #toctitle,
+  .sidebarblock > .content > .title,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 2.375em;
+  }
+  h2 {
+    font-size: 1.625em;
+  }
+  h3,
+  #toctitle,
+  .sidebarblock > .content > .title {
+    font-size: 1.4375em;
+  }
+  h4 {
+    font-size: 1.0625em;
+  }
+}
+/* Print styles.  Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/ Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+*/
+.print-only {
+  display: none !important;
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group; /* h5bp.com/t */
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3,
+  #toctitle,
+  .sidebarblock > .content > .title {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3,
+  #toctitle,
+  .sidebarblock > .content > .title {
+    page-break-after: avoid;
+  }
+  .hide-on-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .hide-for-print {
+    display: none !important;
+  }
+  .show-for-print {
+    display: inherit !important;
+  }
+}
+/* Tables */
+table {
+  background: white;
+  margin-bottom: 1.25em;
+  border: solid 1px #d8d8d8;
+}
+table thead,
+table tfoot {
+  background: none;
+  font-weight: normal;
+}
+table thead tr th,
+table thead tr td,
+table tfoot tr th,
+table tfoot tr td {
+  padding: 0.25em;
+  font-size: inherit;
+  color: #191919;
+  text-align: left;
+}
+table tr th,
+table tr td {
+  padding: 0.3125em;
+  font-size: inherit;
+  color: #191919;
+}
+table tr.even,
+table tr.alt,
+table tr:nth-of-type(even) {
+  background: #f0f0f0;
+}
+table thead tr th,
+table tfoot tr th,
+table tbody tr td,
+table tr td,
+table tfoot tr td {
+  display: table-cell;
+  line-height: 1.4;
+}
+
+.clearfix:before,
+.clearfix:after,
+.float-group:before,
+.float-group:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.float-group:after {
+  clear: both;
+}
+
+*:not(pre) > code {
+  font-size: 0.9em;
+  padding: 0;
+  white-space: nowrap;
+  background-color: inherit;
+  border: 0 solid #dddddd;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: none;
+}
+
+pre,
+pre > code {
+  line-height: 1.6;
+  color: white;
+  font-family: Consolas, Monaco, "Lucida Console", Courier, monospace;
+  font-weight: normal;
+}
+
+kbd.keyseq {
+  color: #4c4c4c;
+}
+
+kbd:not(.keyseq) {
+  display: inline-block;
+  color: #191919;
+  font-size: 0.75em;
+  line-height: 1.4;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
+  margin: -0.15em 0.15em 0 0.15em;
+  padding: 0.2em 0.6em 0.2em 0.5em;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+kbd kbd:first-child {
+  margin-left: 0;
+}
+
+kbd kbd:last-child {
+  margin-right: 0;
+}
+
+.menuseq,
+.menu {
+  color: black;
+}
+
+#content,
+#footnotes,
+#footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
+  *zoom: 1;
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+}
+#header:before,
+#header:after,
+#content:before,
+#content:after,
+#footnotes:before,
+#footnotes:after,
+#footer:before,
+#footer:after {
+  content: " ";
+  display: table;
+}
+#header:after,
+#content:after,
+#footnotes:after,
+#footer:after {
+  clear: both;
+}
+
+#header {
+  width: 100vw;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 0;
+  margin-bottom: 2em;
+  *zoom: 1;
+  position: relative;
+  padding-bottom: 2.5em;
+  background: #2f3033;
+}
+#header > .details {
+  max-width: 950px;
+  margin: auto;
+}
+#header > h1 {
+  color: white;
+  font-weight: bold;
+  border-bottom: 1px solid #dddddd;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -28px;
+  padding-bottom: 32px;
+  max-width: 950px;
+}
+#header span {
+  color: #191919;
+}
+#header #revnumber {
+  text-transform: capitalize;
+}
+#header br {
+  display: none;
+}
+#header br + span {
+  padding-left: 3px;
+}
+#header br + span:before {
+  content: "\2013 \0020";
+}
+#header br + span.author {
+  padding-left: 0;
+}
+#header br + span.author:before {
+  content: ", ";
+}
+
+#toc {
+  border-bottom: 0 solid #dddddd;
+  padding-bottom: 1.25em;
+}
+#toc > ul {
+  margin-left: 0.25em;
+}
+#toc ul.sectlevel0 > li > a {
+  font-style: italic;
+}
+#toc ul.sectlevel0 ul.sectlevel1 {
+  margin-left: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+#toc ul {
+  list-style-type: none;
+}
+
+#toctitle {
+  color: #191919;
+}
+
+#header #toctitle {
+  color: white;
+}
+
+#header #toc a {
+  color: #8b9aca;
+}
+
+@media only screen and (min-width: 1280px) {
+  body.toc2 {
+    padding-left: 20em;
+  }
+  #toc.toc2 {
+    position: fixed;
+    width: 20em;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #dddddd;
+    border-bottom: 0;
+    z-index: 1000;
+    padding: 1em;
+    height: 100%;
+    overflow: auto;
+  }
+  #toc.toc2 #toctitle {
+    margin-top: 0;
+  }
+  #toc.toc2 > ul {
+    font-size: 0.95em;
+  }
+  #toc.toc2 ul ul {
+    margin-left: 0;
+    padding-left: 1.25em;
+  }
+  #toc.toc2 ul.sectlevel0 ul.sectlevel1 {
+    padding-left: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  body.toc2.toc-right {
+    padding-left: 0;
+    padding-right: 20em;
+  }
+  body.toc2.toc-right #toc.toc2 {
+    border-right: 0;
+    border-left: 1px solid #dddddd;
+    left: auto;
+    right: 0;
+  }
+}
+#content #toc {
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  margin-bottom: 1.25em;
+  padding: 1.25em;
+  background: #ededed;
+  border-width: 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+#content #toc > :first-child {
+  margin-top: 0;
+}
+#content #toc > :last-child {
+  margin-bottom: 0;
+}
+#content #toc a {
+  text-decoration: none;
+}
+
+#content #toctitle {
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1em;
+  padding-left: 0.125em;
+}
+
+#footer {
+  max-width: 100%;
+  background-color: white;
+  padding: 1.25em;
+}
+
+#footer-text {
+  color: #2f3033;
+  line-height: 1.26;
+}
+
+.sect1 {
+  padding-bottom: 1.25em;
+}
+
+.sect1 + .sect1 {
+  border-top: 0 solid #dddddd;
+}
+
+#content h1 > a.anchor,
+h2 > a.anchor,
+h3 > a.anchor,
+#toctitle > a.anchor,
+.sidebarblock > .content > .title > a.anchor,
+h4 > a.anchor,
+h5 > a.anchor,
+h6 > a.anchor {
+  position: absolute;
+  width: 1em;
+  margin-left: -1em;
+  display: block;
+  text-decoration: none;
+  visibility: hidden;
+  text-align: center;
+  font-weight: normal;
+}
+#content h1 > a.anchor:before,
+h2 > a.anchor:before,
+h3 > a.anchor:before,
+#toctitle > a.anchor:before,
+.sidebarblock > .content > .title > a.anchor:before,
+h4 > a.anchor:before,
+h5 > a.anchor:before,
+h6 > a.anchor:before {
+  content: "\00A7";
+  font-size: 0.85em;
+  vertical-align: text-top;
+  display: block;
+  margin-top: 0.05em;
+}
+#content h1:hover > a.anchor,
+#content h1 > a.anchor:hover,
+h2:hover > a.anchor,
+h2 > a.anchor:hover,
+h3:hover > a.anchor,
+#toctitle:hover > a.anchor,
+.sidebarblock > .content > .title:hover > a.anchor,
+h3 > a.anchor:hover,
+#toctitle > a.anchor:hover,
+.sidebarblock > .content > .title > a.anchor:hover,
+h4:hover > a.anchor,
+h4 > a.anchor:hover,
+h5:hover > a.anchor,
+h5 > a.anchor:hover,
+h6:hover > a.anchor,
+h6 > a.anchor:hover {
+  visibility: visible;
+}
+#content h1 > a.link,
+h2 > a.link,
+h3 > a.link,
+#toctitle > a.link,
+.sidebarblock > .content > .title > a.link,
+h4 > a.link,
+h5 > a.link,
+h6 > a.link {
+  color: #191919;
+  text-decoration: none;
+}
+#content h1 > a.link:hover,
+h2 > a.link:hover,
+h3 > a.link:hover,
+#toctitle > a.link:hover,
+.sidebarblock > .content > .title > a.link:hover,
+h4 > a.link:hover,
+h5 > a.link:hover,
+h6 > a.link:hover {
+  color: #0c0c0c;
+}
+
+.imageblock,
+.literalblock,
+.listingblock,
+.verseblock,
+.videoblock {
+  margin-bottom: 1.25em;
+}
+
+.admonitionblock td.content > .title,
+.exampleblock > .title,
+.imageblock > .title,
+.videoblock > .title,
+.listingblock > .title,
+.literalblock > .title,
+.openblock > .title,
+.paragraph > .title,
+.quoteblock > .title,
+.sidebarblock > .title,
+.tableblock > .title,
+.verseblock > .title,
+.dlist > .title,
+.olist > .title,
+.ulist > .title,
+.qlist > .title,
+.hdlist > .title {
+  text-align: left;
+  font-weight: bold;
+}
+
+.tableblock > caption {
+  text-align: left;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: visible;
+  max-width: 0;
+}
+
+table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p {
+  font-size: inherit;
+}
+
+.admonitionblock > table {
+  border: 0;
+  background: none;
+  width: 100%;
+}
+.admonitionblock > table td.icon {
+  text-align: center;
+  width: 80px;
+}
+.admonitionblock > table td.icon img {
+  max-width: none;
+}
+.admonitionblock > table td.icon .title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.admonitionblock > table td.content {
+  padding-left: 1.125em;
+  padding-right: 1.25em;
+  border-left: 1px solid #dddddd;
+  color: #191919;
+}
+.admonitionblock > table td.content > :last-child > :last-child {
+  margin-bottom: 0;
+}
+
+.exampleblock > .content {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  margin-bottom: 1.25em;
+  padding: 1.25em;
+  background: white;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.exampleblock > .content > :first-child {
+  margin-top: 0;
+}
+.exampleblock > .content > :last-child {
+  margin-bottom: 0;
+}
+.exampleblock > .content h1,
+.exampleblock > .content h2,
+.exampleblock > .content h3,
+.exampleblock > .content #toctitle,
+.sidebarblock.exampleblock > .content > .title,
+.exampleblock > .content h4,
+.exampleblock > .content h5,
+.exampleblock > .content h6,
+.exampleblock > .content p {
+  color: #191919;
+}
+.exampleblock > .content h1,
+.exampleblock > .content h2,
+.exampleblock > .content h3,
+.exampleblock > .content #toctitle,
+.sidebarblock.exampleblock > .content > .title,
+.exampleblock > .content h4,
+.exampleblock > .content h5,
+.exampleblock > .content h6 {
+  line-height: 1;
+  margin-bottom: 0.625em;
+}
+.exampleblock > .content h1.subheader,
+.exampleblock > .content h2.subheader,
+.exampleblock > .content h3.subheader,
+.exampleblock > .content .subheader#toctitle,
+.sidebarblock.exampleblock > .content > .subheader.title,
+.exampleblock > .content h4.subheader,
+.exampleblock > .content h5.subheader,
+.exampleblock > .content h6.subheader {
+  line-height: 1.4;
+}
+
+.exampleblock.result > .content {
+  -webkit-box-shadow: 0 1px 8px #bfbfbf;
+  box-shadow: 0 1px 8px #bfbfbf;
+}
+
+.sidebarblock {
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  margin-bottom: 1.25em;
+  padding: 1.25em;
+  background: #ededed;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.sidebarblock > :first-child {
+  margin-top: 0;
+}
+.sidebarblock > :last-child {
+  margin-bottom: 0;
+}
+.sidebarblock h1,
+.sidebarblock h2,
+.sidebarblock h3,
+.sidebarblock #toctitle,
+.sidebarblock > .content > .title,
+.sidebarblock h4,
+.sidebarblock h5,
+.sidebarblock h6,
+.sidebarblock p {
+  color: #191919;
+}
+.sidebarblock h1,
+.sidebarblock h2,
+.sidebarblock h3,
+.sidebarblock #toctitle,
+.sidebarblock > .content > .title,
+.sidebarblock h4,
+.sidebarblock h5,
+.sidebarblock h6 {
+  line-height: 1;
+  margin-bottom: 0.625em;
+}
+.sidebarblock h1.subheader,
+.sidebarblock h2.subheader,
+.sidebarblock h3.subheader,
+.sidebarblock .subheader#toctitle,
+.sidebarblock > .content > .subheader.title,
+.sidebarblock h4.subheader,
+.sidebarblock h5.subheader,
+.sidebarblock h6.subheader {
+  line-height: 1.4;
+}
+.sidebarblock > .content > .title {
+  color: #191919;
+  margin-top: 0;
+  line-height: 1.4;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #bfbfbf;
+}
+
+.exampleblock > .content > :last-child > :last-child,
+.exampleblock > .content .olist > ol > li:last-child > :last-child,
+.exampleblock > .content .ulist > ul > li:last-child > :last-child,
+.exampleblock > .content .qlist > ol > li:last-child > :last-child,
+.sidebarblock > .content > :last-child > :last-child,
+.sidebarblock > .content .olist > ol > li:last-child > :last-child,
+.sidebarblock > .content .ulist > ul > li:last-child > :last-child,
+.sidebarblock > .content .qlist > ol > li:last-child > :last-child {
+  margin-bottom: 0;
+}
+
+.literalblock > .content pre,
+.listingblock > .content pre {
+  background: #2f3033;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dddddd;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 1.0625em;
+  word-wrap: break-word;
+}
+.literalblock > .content pre.nowrap,
+.listingblock > .content pre.nowrap {
+  overflow-x: auto;
+  white-space: pre;
+  word-wrap: normal;
+}
+.literalblock > .content pre > code,
+.listingblock > .content pre > code {
+  display: block;
+}
+@media only screen {
+  .literalblock > .content pre,
+  .listingblock > .content pre {
+    font-size: 0.72em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .literalblock > .content pre,
+  .listingblock > .content pre {
+    font-size: 0.81em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .literalblock > .content pre,
+  .listingblock > .content pre {
+    font-size: 0.9em;
+  }
+}
+
+.listingblock > .content {
+  position: relative;
+}
+
+.listingblock:hover code[class*=" language-"]:before {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #999;
+  position: absolute;
+  top: 0.375em;
+  right: 0.375em;
+}
+
+.listingblock:hover code.asciidoc:before {
+  content: "asciidoc";
+}
+.listingblock:hover code.clojure:before {
+  content: "clojure";
+}
+.listingblock:hover code.css:before {
+  content: "css";
+}
+.listingblock:hover code.groovy:before {
+  content: "groovy";
+}
+.listingblock:hover code.html:before {
+  content: "html";
+}
+.listingblock:hover code.java:before {
+  content: "java";
+}
+.listingblock:hover code.javascript:before {
+  content: "javascript";
+}
+.listingblock:hover code.python:before {
+  content: "python";
+}
+.listingblock:hover code.ruby:before {
+  content: "ruby";
+}
+.listingblock:hover code.scss:before {
+  content: "scss";
+}
+.listingblock:hover code.xml:before {
+  content: "xml";
+}
+.listingblock:hover code.yaml:before {
+  content: "yaml";
+}
+
+.listingblock.terminal pre .command:before {
+  content: attr(data-prompt);
+  padding-right: 0.5em;
+  color: #999;
+}
+
+.listingblock.terminal pre .command:not([data-prompt]):before {
+  content: "$";
+}
+
+table.pyhltable {
+  border: 0;
+  margin-bottom: 0;
+}
+
+table.pyhltable td {
+  vertical-align: top;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+table.pyhltable td.code {
+  padding-left: 0.75em;
+  padding-right: 0;
+}
+
+.highlight.pygments .lineno,
+table.pyhltable td:not(.code) {
+  color: #999;
+  padding-left: 0;
+  padding-right: 0.5em;
+  border-right: 1px solid #dddddd;
+}
+
+.highlight.pygments .lineno {
+  display: inline-block;
+  margin-right: 0.25em;
+}
+
+table.pyhltable .linenodiv {
+  background-color: transparent !important;
+  padding-right: 0 !important;
+}
+
+.quoteblock {
+  margin: 0 0 1.25em;
+  padding: 0.5625em 1.25em 0 1.1875em;
+  border-left: 1px solid #dddddd;
+}
+.quoteblock blockquote {
+  margin: 0 0 1.25em 0;
+  padding: 0 0 0.5625em 0;
+  border: 0;
+}
+.quoteblock blockquote > .paragraph:last-child p {
+  margin-bottom: 0;
+}
+.quoteblock .attribution {
+  margin-top: -0.25em;
+  padding-bottom: 0.5625em;
+  font-size: 0.8125em;
+  color: #4c4c4c;
+}
+.quoteblock .attribution br {
+  display: none;
+}
+.quoteblock .attribution cite {
+  display: block;
+  margin-bottom: 0.625em;
+}
+
+table thead th,
+table tfoot th {
+  font-weight: normal;
+}
+
+table.tableblock.grid-all {
+  border-collapse: separate;
+  border-spacing: 1px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+table.tableblock.frame-topbot,
+table.tableblock.frame-none {
+  border-left: 0;
+  border-right: 0;
+}
+
+table.tableblock.frame-sides,
+table.tableblock.frame-none {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+table.tableblock td .paragraph:last-child p,
+table.tableblock td > p:last-child {
+  margin-bottom: 0;
+}
+
+th.tableblock.halign-left,
+td.tableblock.halign-left {
+  text-align: left;
+}
+
+th.tableblock.halign-right,
+td.tableblock.halign-right {
+  text-align: right;
+}
+
+th.tableblock.halign-center,
+td.tableblock.halign-center {
+  text-align: center;
+}
+
+th.tableblock.valign-top,
+td.tableblock.valign-top {
+  vertical-align: top;
+}
+
+th.tableblock.valign-bottom,
+td.tableblock.valign-bottom {
+  vertical-align: bottom;
+}
+
+th.tableblock.valign-middle,
+td.tableblock.valign-middle {
+  vertical-align: middle;
+}
+
+p.tableblock.header {
+  color: #191919;
+  font-weight: normal;
+}
+
+td > div.verse {
+  white-space: pre;
+}
+
+ol {
+  margin-left: 0.25em;
+}
+
+ul li ol {
+  margin-left: 0;
+}
+
+dl dd {
+  margin-left: 2.5em;
+}
+
+dl dd:last-child,
+dl dd:last-child > :last-child {
+  margin-bottom: 0;
+}
+
+ol > li p,
+ul > li p,
+ul dd,
+ol dd,
+.olist .olist,
+.ulist .ulist,
+.ulist .olist,
+.olist .ulist {
+  margin-bottom: 0.625em;
+}
+
+ul.unstyled,
+ol.unnumbered,
+ul.checklist,
+ul.none {
+  list-style-type: none;
+}
+
+ul.unstyled,
+ol.unnumbered,
+ul.checklist {
+  margin-left: 0.625em;
+}
+
+ul.checklist li > p:first-child > i[class^="icon-check"]:first-child,
+ul.checklist li > p:first-child > input[type="checkbox"]:first-child {
+  margin-right: 0.25em;
+}
+
+ul.checklist li > p:first-child > input[type="checkbox"]:first-child {
+  position: relative;
+  top: 1px;
+}
+
+ul.inline {
+  margin: 0 auto 0.625em auto;
+  margin-left: -1.375em;
+  margin-right: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+ul.inline > li {
+  list-style: none;
+  float: left;
+  margin-left: 1.375em;
+  display: block;
+}
+ul.inline > li > * {
+  display: block;
+}
+
+.unstyled dl dt {
+  font-weight: normal;
+  font-style: normal;
+}
+
+ol.arabic {
+  list-style-type: decimal;
+}
+
+ol.decimal {
+  list-style-type: decimal-leading-zero;
+}
+
+ol.loweralpha {
+  list-style-type: lower-alpha;
+}
+
+ol.upperalpha {
+  list-style-type: upper-alpha;
+}
+
+ol.lowerroman {
+  list-style-type: lower-roman;
+}
+
+ol.upperroman {
+  list-style-type: upper-roman;
+}
+
+ol.lowergreek {
+  list-style-type: lower-greek;
+}
+
+.hdlist > table,
+.colist > table {
+  border: 0;
+  background: none;
+}
+.hdlist > table > tbody > tr,
+.colist > table > tbody > tr {
+  background: none;
+}
+
+td.hdlist1 {
+  padding-right: 0.8em;
+  font-weight: bold;
+}
+
+td.hdlist1,
+td.hdlist2 {
+  vertical-align: top;
+}
+
+.literalblock + .colist,
+.listingblock + .colist {
+  margin-top: -0.5em;
+}
+
+.colist > table tr > td:first-of-type {
+  padding: 0 0.8em;
+  line-height: 1;
+}
+.colist > table tr > td:last-of-type {
+  padding: 0.25em 0;
+}
+
+.qanda > ol > li > p > em:only-child {
+  color: #1b3484;
+}
+
+.thumb,
+.th {
+  line-height: 0;
+  display: inline-block;
+  border: solid 4px white;
+  -webkit-box-shadow: 0 0 0 1px #dddddd;
+  box-shadow: 0 0 0 1px #dddddd;
+}
+
+.imageblock.left,
+.imageblock[style*="float: left"] {
+  margin: 0.25em 0.625em 1.25em 0;
+}
+.imageblock.right,
+.imageblock[style*="float: right"] {
+  margin: 0.25em 0 1.25em 0.625em;
+}
+.imageblock > .title {
+  margin-bottom: 0;
+}
+.imageblock.thumb,
+.imageblock.th {
+  border-width: 6px;
+}
+.imageblock.thumb > .title,
+.imageblock.th > .title {
+  padding: 0 0.125em;
+}
+
+.image.left,
+.image.right {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  display: inline-block;
+  line-height: 0;
+}
+.image.left {
+  margin-right: 0.625em;
+}
+.image.right {
+  margin-left: 0.625em;
+}
+
+a.image {
+  text-decoration: none;
+}
+
+span.footnote,
+span.footnoteref {
+  vertical-align: super;
+  font-size: 0.875em;
+}
+span.footnote a,
+span.footnoteref a {
+  text-decoration: none;
+}
+
+#footnotes {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  margin-bottom: 0.625em;
+}
+#footnotes hr {
+  width: 20%;
+  min-width: 6.25em;
+  margin: -0.25em 0 0.75em 0;
+  border-top: 1px dashed #d8d8d8;
+}
+#footnotes .footnote {
+  padding: 0 0.375em;
+  line-height: 1.3;
+  font-size: 0.875em;
+  margin-left: 1.2em;
+  text-indent: -1.2em;
+  margin-bottom: 0.2em;
+}
+#footnotes .footnote a:first-of-type {
+  font-weight: bold;
+  text-decoration: none;
+}
+#footnotes .footnote:last-of-type {
+  margin-bottom: 0;
+}
+
+#content #footnotes {
+  margin-top: -0.625em;
+  margin-bottom: 0;
+  padding: 0.75em 0;
+}
+
+.gist .file-data > table {
+  border: none;
+  background: #fff;
+  width: 100%;
+  margin-bottom: 0;
+}
+.gist .file-data > table td.line-data {
+  width: 99%;
+}
+
+div.unbreakable {
+  page-break-inside: avoid;
+}
+
+.big {
+  font-size: larger;
+}
+
+.small {
+  font-size: smaller;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.aqua {
+  color: #00bfbf;
+}
+
+.aqua-background {
+  background-color: #00fafa;
+}
+
+.black {
+  color: black;
+}
+
+.black-background {
+  background-color: black;
+}
+
+.blue {
+  color: #0000bf;
+}
+
+.blue-background {
+  background-color: #0000fa;
+}
+
+.fuchsia {
+  color: #bf00bf;
+}
+
+.fuchsia-background {
+  background-color: #fa00fa;
+}
+
+.gray {
+  color: #606060;
+}
+
+.gray-background {
+  background-color: #7d7d7d;
+}
+
+.green {
+  color: #006000;
+}
+
+.green-background {
+  background-color: #007d00;
+}
+
+.lime {
+  color: #00bf00;
+}
+
+.lime-background {
+  background-color: #00fa00;
+}
+
+.maroon {
+  color: #600000;
+}
+
+.maroon-background {
+  background-color: #7d0000;
+}
+
+.navy {
+  color: #000060;
+}
+
+.navy-background {
+  background-color: #00007d;
+}
+
+.olive {
+  color: #606000;
+}
+
+.olive-background {
+  background-color: #7d7d00;
+}
+
+.purple {
+  color: #600060;
+}
+
+.purple-background {
+  background-color: #7d007d;
+}
+
+.red {
+  color: #bf0000;
+}
+
+.red-background {
+  background-color: #fa0000;
+}
+
+.silver {
+  color: #909090;
+}
+
+.silver-background {
+  background-color: #bcbcbc;
+}
+
+.teal {
+  color: #006060;
+}
+
+.teal-background {
+  background-color: #007d7d;
+}
+
+.white {
+  color: #bfbfbf;
+}
+
+.white-background {
+  background-color: #fafafa;
+}
+
+.yellow {
+  color: #bfbf00;
+}
+
+.yellow-background {
+  background-color: #fafa00;
+}
+
+span.icon > [class^="icon-"],
+span.icon > [class*=" icon-"] {
+  cursor: default;
+}
+
+.admonitionblock td.icon .icon-note:before {
+  font-size: 2.5em;
+  cursor: default;
+  content: "\f249";
+  color: #ffa500;
+}
+.admonitionblock td.icon .icon-tip:before {
+  font-size: 2.5em;
+  cursor: default;
+  content: "\f075";
+  color: #00bfff;
+}
+.admonitionblock td.icon .icon-warning:before {
+  font-size: 2.5em;
+  cursor: default;
+  content: "\f06a";
+  color: #ff8000;
+}
+.admonitionblock td.icon .icon-caution:before {
+  font-size: 2.5em;
+  cursor: default;
+  content: "\f071";
+  color: #dc143c;
+}
+.admonitionblock td.icon .icon-important:before {
+  font-size: 2.5em;
+  cursor: default;
+  content: "\f05a";
+  color: #1e90ff;
+}
+
+.conum {
+  display: inline-block;
+  color: white !important;
+  background-color: #191919;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  position: relative;
+  top: -2px;
+  letter-spacing: -1px;
+}
+.conum * {
+  color: white !important;
+}
+.conum + b {
+  display: none;
+}
+.conum:after {
+  content: attr(data-value);
+}
+.conum:not([data-value]):empty {
+  display: none;
+}
+
+.imageblock,
+.literalblock,
+.listingblock,
+.sidebarblock {
+  margin-left: -0.9375em;
+  margin-right: -0.9375em;
+}
+
+/*body {
+  background: linear-gradient(270deg, #2f3033 0%, #2f3033 100%) no-repeat 0 0/100%
+    178px;
+  background: -webkit-linear-gradient(270deg, #2f3033 0, #2f3033 100%) no-repeat
+    0 0/100% 178px;
+}*/
+
+#header > h1 {
+  border-bottom: none;
+  margin-bottom: -28px;
+  margin-top: 1em;
+}
+#header span {
+  color: white;
+}
+#header #toc {
+  max-width: 950px;
+  margin: auto;
+  padding-top: 2em;
+  margin-bottom: -4em;
+}
+
+.sect1:not(:last-child) {
+  padding-bottom: 0;
+}
+
+#toc ol li ol,
+#toc ol li ul {
+  padding-left: 40px;
+}
+
+#toctitle {
+  letter-spacing: -1px;
+}
+
+#content h2,
+#content h3,
+#content #toctitle,
+#content .sidebarblock > .content > .title,
+#content h4,
+#content h5 {
+  letter-spacing: -1px;
+}
+
+dl dt {
+  font-style: italic;
+}
+
+.ulist > ul,
+.olist > ol {
+  margin-left: 0;
+  padding-left: 40px;
+}
+
+.admonitionblock > table td.icon {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.admonitionblock > table td.content {
+  border-left: 0;
+  padding: 15px 25px 20px 15px;
+  border-left: 1px solid #dddddd !important;
+}
+
+.imageblock {
+  border: 1px none;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  padding: 15px 15px 5px 15px;
+}
+.imageblock > .content {
+  text-align: center;
+}
+.imageblock > .title {
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  margin-top: 0.375em;
+  margin-bottom: 0;
+}
+
+.literalblock > .content > pre,
+.listingblock > .content > pre {
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  border: 0;
+}
+
+pre .conum {
+  background: white;
+  color: #191919 !important;
+}
+pre .conum * {
+  color: #191919 !important;
+}
+
+.sidebarblock {
+  border-color: #bfbfbf;
+}
+
+table.tableblock.grid-all {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  border-collapse: collapse;
+}
+table.tableblock.grid-all > thead > tr {
+  border-bottom: 2px solid #d8d8d8;
+}
+table.tableblock.grid-all > tbody > tr {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+#footer {
+  border-top: 1px dashed #d8d8d8;
+}
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="article">
+<div id="header">
+<h1>Literature Review</h1>
+<div class="details">
+<span id="author" class="author">Do digital technologies improve life or distract from it? The impacts of social media on mental health and wellbeing.</span><br>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>There is a belief that social media has the potential to have a profound effect on the way we view the world. It’s unclear exactly what these effects are, and to what extent they effect us. To gain an understanding of this topic a review of the current body of work was undertaken. This literature review critically evaluates various sources focussing on social media to provide a further understanding of the topic</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_effects_on_individual_mental_health">Effects on Individual Mental Health</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There is conflicting evidence from the literature about whether social media has a positive or negative impact on mental health. <a href="#bibliography-default-Strickland2014">Stickland (2014)</a> identified core themes in this discussion, all relating to potential topics of study relating to social media&#8217;s effects:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The impact of sedentary behaviours linked to social media use on mental health.</p>
+</li>
+<li>
+<p>Displaced behaviour theory, relating to time spent using social media and how much this displaces other activity.</p>
+</li>
+<li>
+<p>Sleep interruption due to blue light, affecting the circadian rhythm.</p>
+</li>
+<li>
+<p>Social media&#8217;s effects on romantic and platonic relationships.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These themes contribute to the understanding of how issues caused by social media can manifest, indicating that harmful effects are dependant on how social media is used. This thesis outlined the potential pitfalls of social media use, explaining how certain utilisations of social media can have negative impacts, in order to contribute to the overall theory that social media can have an effect on mental health.</p>
+</div>
+<div class="paragraph">
+<p>Similar to this thesis, <a href="#bibliography-default-Dogra2018">O’Reilly et al. (2018)</a> presented themes as to how social media use can lead to detrimental effects on mental health. These themes revolved around the perceptions of social media platforms held by adolescents, identifying the possibility that the perception of these platforms can have a larger impact than usage overall. These themes include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The belief that social media causes mood and anxiety disorders for some people.</p>
+</li>
+<li>
+<p>The view that social media facilitates bullying.</p>
+</li>
+<li>
+<p>That social media is often framed as a form of addiction.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This study shows that the perception of social media is seen as negative by the majority of adolescents, believing that there are inherent negative effects on mental health. This being said, the study establishes that it&#8217;s unclear whether younger participants truly understand what mental health involves, stating that they don&#8217;t understand what mental health is, or giving incorrect or vague explanations, indicating a lack of understanding.</p>
+</div>
+<div class="paragraph">
+<p>Overall, <a href="#bibliography-default-Dogra2018">O’Reilly et al. (2018)</a> show that the perception of social media is negative, being seen as contributing to mental health problems, bullying and addiction. In spite of this, self-reported social media usage is relatively high, with people reporting that they were dependent on social media, though more commonly referring to 'some people', preferring to generalise than self-identify their experience.</p>
+</div>
+<div class="paragraph">
+<p><a href="#bibliography-default-Barry2017">Barry et al. (2017)</a> investigates social media use in adolescents, using self-reported data from parent-adolescent pairs based on symptoms of mental health problems based on the DSM-5, along with self-reported loneliness and fear of missing out (FoMO). FoMO was surveyed with questions like "I get worried that my friends are having fun without me". This study has a few findings that reinforce the other literature referenced, namely that social media activity has a positive relationship with various symptoms of mental health problems, loneliness, and FoMO. The DSM-5 symptoms referenced are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Attention-deficit/hyperactivity disorder (ADHD/ADD)</p>
+</li>
+<li>
+<p>Oppositional defiant disorder (ODD)</p>
+</li>
+<li>
+<p>Conduct disorder (CD)</p>
+</li>
+<li>
+<p>Anxiety</p>
+</li>
+<li>
+<p>Depression</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Overall, the study found there was a correlation between social media use and symptoms of mental health problems. Interestingly, the reported loneliness and FoMO from adolescents correlated with parent-reported DSM-5 symptoms, indicating that feelings of loneliness and FoMO can contribute to mental health problems. Additionally, anxiety and depressive symptoms were the highest reported among parents, with adolescents reporting high FoMO.</p>
+</div>
+<div class="paragraph">
+<p>While social media has been shown by this literature to have the potential for negative effects, <a href="#bibliography-default-Pavalanathan2015">Pavalanathan et al. (2015)</a> shows that there can be additional benefits. This study focusses on mental health communities on Reddit, analysing the prevalence of so-called 'throwaway' accounts. These accounts are made by individuals to post content, then log out, providing an extra layer of anonymity to their posts. Additionally, these types of accounts are 6 times more common on mental health communities, as opposed to more traditional communities. This anonymity is shown to have particular effects:</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+"We observe that mental health discourse from throwaways is considerably disinhibiting and exhibits increased negativity, cognitive bias and self-attentional focus, and lowered self-esteem."
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>While these effects may sound negative, research in other fields shows that disinhibition and the resultant self-disclosure can be an effective healing process. As a result of this, <a href="#bibliography-default-Pavalanathan2015">Pavalanathan et al. (2015)</a> argue that the anonymity afforded by throwaway accounts can be beneficial to self healing, allowing for candid discussion that may otherwise go unspoken.</p>
+</div>
+<div class="paragraph">
+<p>From these sources it&#8217;s clear that there&#8217;s an established understanding that social media can have negative effects on users. This being said, the literature also shows that there&#8217;s a potential for constructive and healthy social media usage; further research should aim to identify how social media can be used as a tool for healing, alongside any negative effects and risks.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_effects_on_the_understanding_of_news_and_current_events">Effects on the Understanding of News and Current Events</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In addition to mental health, there is evidence that social media can have an impact on the consumption of news and related media. <a href="#bibliography-default-Hermida2012">Hermida et al. (2012)</a> analyses survey data relating to the impact social media has on news consumption, finding that social media has become a significant source of online news. Around two-fifths of the users surveyed said that they receive news from people they follow on various platforms, stating that they value social media because of the way it helps them keep up to date with news and events.</p>
+</div>
+<div class="paragraph">
+<p>An area of contention in this article revolves around how an individual&#8217;s social circle "takes on the role of a news editor", promoting content that is seen as interesting, important or entertaining. The issue this can present relates to how individuals typically seek out things validate their core beliefs instead of choosing to be exposed to opposing viewpoints. There is a belief that this can potentially result in the news an individual consumes from social media becomes less diverse, opposing the self-reported view that social media makes individuals aware of a broader range of news.</p>
+</div>
+<div class="paragraph">
+<p>Similar to this study, <a href="#bibliography-default-Weeks2017">Gil de Zúñiga et al. (2017)</a> report on the perception they name "news-finds-me". This perception involves individuals on social media refraining from seeking out news and information, instead letting the news 'find them'. This involves the individual assuming that any significant news will eventually enter their feed through their social circle.</p>
+</div>
+<div class="paragraph">
+<p>This study shows that individuals that self-report having this perception are typically less knowledgeable about politics over time. Interestingly, the prevalence of the perception is positively correlated with news exposure on social media. This implies that the individuals who subscribe to 'news-finds-me' are more likely to be exposed to news on social media platforms, but less likely to feel the need to actively seek out the information presented to them.</p>
+</div>
+<div class="paragraph">
+<p>These two references show that social media can have an impact on the consumption and variety of news-related media that an individual consumes. There&#8217;s still questions as to how this compares with people who seek out news on their own and whether or not social media can replace traditional news consumption. Further research on this topic should analyse how social media can affect the perception someone has on news and current events, along with the implications of relying on social media to consume news.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_effects_on_personal_relationships">Effects on Personal Relationships</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As covered earlier in this review, <a href="#bibliography-default-Strickland2014">Stickland (2014)</a> comments on core themes about the effect social media can have. Additional themes illustrated in the thesis revolve around interpersonal relationships, and the effects social media can have on them. The two additional themes relate to social media&#8217;s effects on both romantic relationships and platonic relationships.</p>
+</div>
+<div class="paragraph">
+<p><a href="#bibliography-default-Strickland2014">Stickland (2014)</a> states that social media has had a profound effect on how people interact with their social networks, claiming that friends and family can keep up to date through social media more efficiently compared with traditional social contact. This being said, it&#8217;s unclear whether this has a positive or a negative affect, relating to potential perceived relational intrusion caused by relaxed privacy compared with face-to-face interactions.</p>
+</div>
+<div class="paragraph">
+<p>Additionally, social media can affect individuals' negatively based on a fear of missing out (FoMO). As described by <a href="#bibliography-default-Barry2017">Barry et al. (2017)</a>, FoMO involves anxiety and inadequacy relating to the content consumed on social media. According to <a href="#bibliography-default-Strickland2014">Stickland (2014)</a>, this can be exacerbated by the content that comes alongside platonic online relationships; posts from friends depicting holidays, parties, events, etc. This can result in an individual engaging in social comparison, potentially affecting their self-esteem and mental health.</p>
+</div>
+<div class="paragraph">
+<p>Similarly, romantic relationships are shown to be affected by social media, with this thesis taking time to explain links between general internet usage, social media usage and:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Increased reported conflict between partners</p>
+</li>
+<li>
+<p>Increased jealousy</p>
+</li>
+<li>
+<p>Elevated feelings of exclusion</p>
+</li>
+<li>
+<p>Lower trust &amp; commitment</p>
+</li>
+<li>
+<p>Increased partner surveillance</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It&#8217;s unclear whether there are any positive effects social media can have on relationships. <a href="#bibliography-default-Strickland2014">Stickland (2014)</a> doesn&#8217;t comment on any constructive impacts social media can have on romantic relationships. This being said, there are no direct comparisons between romantic partners that do use social media and those who don&#8217;t; perhaps further research is required on this topic.</p>
+</div>
+<div class="paragraph">
+<p><a href="#bibliography-default-Glaser2018">Glaser et al. (2018)</a> cover similar topics, studying the effects social media can have on social networking, describing the impacts social media can have on offline social capital (i.e. the value of face to face relationships) using two hypotheses:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The augmentation hypothesis argues that social media can be positive for building offline social capital, improving the availability of social support and improving mental health.</p>
+</li>
+<li>
+<p>The displacement hypothesis argues the opposite, that social media can replacing offline social contact, damaging social capital, having a negative impact on mental health.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These hypotheses seem to be fairly robust, with the study suggesting that either hypothesis is likely to apply for an individual engaging in online social contact. The study also found that social media use correlated somewhat with better mental health, suggesting that the augmentation hypothesis may be slightly more likely. Ultimately, <a href="#bibliography-default-Glaser2018">Glaser et al. (2018)</a> comment that it&#8217;s possible that the effects social media and networking can have on mental health depends on user understanding and ability to use social media in a healthy way.</p>
+</div>
+<div class="paragraph">
+<p>These two sources both suggest the effects social media can have on interpersonal relationships are negative overall. Because of this, further research on this topic should attempt to identify healthy habits that can be constructive to both relationships and mental health, in order to suggest how social media can be used in a more healthy way.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It&#8217;s clear from this research that social media has the potential to be negative to mental health. What&#8217;s unclear from these sources is exactly how social media can be used in a positive, constructive way, and what positive impacts are common and how they come about. The themes outlined in this review are core areas of contention that require additional understanding. Because of this, my primary research will relate to these three themes, asking questions about how social media impacts mental health directly, news consumption and social capital.</p>
+</div>
+<div class="paragraph">
+<p>Further research should aim to establish what contributes to a healthy experience online, in order to help suggest healthy habits in terms of social media usage, and how that differs from the common unhealthy habits.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reference_list">Reference List</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a id="bibliography-default-Strickland2014"></a>Stickland, A. (2014) <em>Exploring the Effects of Social Media Use on the Mental Health of Young Adults Young Adults</em>. Available at: <a href="https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=2683&amp;context=honorstheses1990-2015" class="bare">https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=2683&amp;context=honorstheses1990-2015</a> (Accessed: 29 April 2020).</p>
+</div>
+<div class="paragraph">
+<p><a id="bibliography-default-Dogra2018"></a>O’Reilly, M. <em>et al.</em> (2018) ‘Is social media bad for mental health and wellbeing? Exploring the perspectives of adolescents’, <em>Clinical Child Psychology and Psychiatry</em>, 23(4), pp. 601–613. doi: 10.1177/1359104518775154.</p>
+</div>
+<div class="paragraph">
+<p><a id="bibliography-default-Barry2017"></a>Barry, C. and Briggs, S. (2017) ‘Adolescent social media use and mental health from adolescent and parent perspectives’, <em>J Adolesc</em>. doi: 10.1016/j.adolescence.2017.08.005.</p>
+</div>
+<div class="paragraph">
+<p><a id="bibliography-default-Pavalanathan2015"></a>Pavalanathan, U. and De Choudhury, M. (2015) ‘Identity Management and Mental Health Discourse in Social Media’, in <em>Proceedings of the 24th International Conference on World Wide Web</em>. New York, NY, USA: Association for Computing Machinery (WWW â€™15 Companion), pp. 315–321. doi: 10.1145/2740908.2743049.</p>
+</div>
+<div class="paragraph">
+<p><a id="bibliography-default-Hermida2012"></a>Hermida, A. <em>et al.</em> (2012) ‘SHARE, LIKE, RECOMMEND’, <em>Journalism Studies</em>. Routledge, 13(5-6), pp. 815–824. doi: 10.1080/1461670X.2012.664430.</p>
+</div>
+<div class="paragraph">
+<p><a id="bibliography-default-Weeks2017"></a>Zúñiga, H. Gil de, Weeks, B. and Ardèvol-Abreu, A. (2017) ‘Effects of the News-Finds-Me Perception in Communication: Social Media Use Implications for News Seeking and Learning About Politics’, <em>Journal of Computer-Mediated Communication</em>, 22(3), pp. 105–123. doi: 10.1111/jcc4.12185.</p>
+</div>
+<div class="paragraph">
+<p><a id="bibliography-default-Glaser2018"></a>Glaser, P. <em>et al.</em> (2018) ‘Is Social Media Use for Networking Positive or Negative? Offline Social Capital and Internet Addiction as Mediators for the Relationship between Social Media Use and Mental Health’, <em>New Zealand Journal of Psychology</em>, 47, pp. 11–17. Available at: <a href="https://www.researchgate.net/publication/329403798_Is_Social_Media_Use_for_Networking_Positive_or_Negative_Offline_Social_Capital_and_Internet_Addiction_as_Mediators_for_the_Relationship_between_Social_Media_Use_and_Mental_Health" class="bare">https://www.researchgate.net/publication/329403798_Is_Social_Media_Use_for_Networking_Positive_or_Negative_Offline_Social_Capital_and_Internet_Addiction_as_Mediators_for_the_Relationship_between_Social_Media_Use_and_Mental_Health</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2020-05-03 17:53:03 +0100
+</div>
+</div>
+</body>
+</html>

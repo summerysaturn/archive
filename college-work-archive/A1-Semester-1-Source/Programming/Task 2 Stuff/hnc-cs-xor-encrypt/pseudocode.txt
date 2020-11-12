@@ -1,0 +1,26 @@
+input key as "key" (0-255, integer)
+input string as "tempInput" (any length)
+
+convert tempInput to BitArray named "inputArray"
+convert key to BitArray named "bitKey"
+
+create BitArray Array (BitArray[]) called encryptedString
+
+
+function to return BitArray (xorBytes(_arg1, _arg2))
+    create temp BitArray named _tempArray
+
+    for loop with 8 iterations
+        if _arg1[i] is _arg2[i]
+            _tempArray[i] = 0
+        else
+            _tempArray[i] = 1
+    
+    return _tempArray
+
+
+function void main
+    create temp BitArray named _tempKey, assign to bitKey initially
+
+    for each BitArray in inputArray, i = 0 -> total length
+        encryptedString[i] = xorBytes(inputArray, _tempKey)

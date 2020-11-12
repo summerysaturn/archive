@@ -1,0 +1,6 @@
+extends: default
+admonition:
+  icon:
+    note:
+      name: fas-comment
+      stroke-color: 62abfa

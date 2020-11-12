@@ -1,0 +1,130 @@
+= FaceFillers Documentation
+:bibliography-database: u4-old.bib
+:bibliography-style: harvard-cite-them-right
+:bibliography-locale: en-GB
+:bibliography-sort: []
+:icons: font
+:data-uri:
+
+image::preview.png[]
+
+This app mockup is developed using Electron, Node.js, and some npm plugins (most importantly ‘mysql’ and ‘Octicons’). Electron utilises HTML, CSS and JavaScript to function, using Chromium to display webpages as though they were part of a desktop or mobile application cite:[electron]. This was the perfect choice of framework for this application due to my prior knowledge about web development, and that Node.js allows for mysql to be integrated into the development of the app.
+
+For the database portion of the application I used MariaDB, a fork of MySQL created to act as an open-source, community developed alternative of the original MySQL. This means that it’s functionally similar to standard MySQL, allowing for database queries, relational databases, and data validation, making it perfect for this use-case cite:[mariaDB].
+
+== Customer Page
+
+image::customerpage-u.png[]
+
+This page is arguably the most complicated section of the application, utilising both SQL queries along with a ‘pure-js’ cart system for constructing the completed order. This cart system was developed by myself alongside the rest of the application, and works by having a dictionary with 4 separate arrays inside, each containing information fetched from the database or entered by the user.
+
+image::cartDict.png[]
+
+- item_id – an array of item IDs that are in the cart at the moment
+- itemname – a human-friendly array of names to go with the IDs
+- itemcost – an integer array containing costs of the item
+- itemquantity – another integer array representing quantity
+
+These four arrays are used in parallel, so that the name and ID of an item can be identified by using the same array index, using the name of each element to get specific details. This system works well with the query that creates an order in the orders table, along with the set of  items it adds to the table order_items.
+
+image::editHTML.png[]
+
+The controller script utilises this cart dictionary to fill information into the order subtotal box, showing item names and quantity should the quantity be greater than 0. This is done using the above section of code, which gets the quantity, adds an ‘x’, gets the name, then adds it to the div shown above.
+
+image::firstQuery.png[]
+
+image::homeButtonModal.png[]
+
+This snippet shows that it creates one order in the orders table, then adds one row to order_items for each item present in the cart, filling the quantity, ID and the order ID that it needs to reference. Following that, it clears the existing cart just to make sure that the order cannot be placed twice. Along with clearing the cart, the placeOrder function also pops up a modal showing a home button and a confirmation along with disabling all the buttons present on the page, stopping multiple orders from being placed in a stronger fashion.
+
+image::bigAddItem.png[]
+
+This code outlines specifics on how items are added to the cart, which begins as a dictionary with empty arrays. The function gets the information it needs from the onClick function created in the initialisation forEach, then passes it to this function, which utilises that information to create a listing in the cart. This function checks if an item already has a listing in the cart, then either appends or edits the listing at the offset identified. The cart.item_id.length variable is used because the array starts at 0, which means that the length is always the last offset plus one.
+
+The code block below that uses the Object.keys() function to turn the RowDataObject array into a true dictionary for easier iteration and modification. After that, it fills data into the cart, using a simple algorithm to add to the quantity up to the value of 10. If the quantity doesn’t yet exist, it sets it to 1, as the HTML that’s filled in has the quantity div set to 0 to begin with. This code is reused for removing an item, with items with quantity 0 being ignored by the order creation function.
+
+== Store Page
+
+image::storepage-u.png[]
+
+This page is simpler than the customer page, as it only involves displaying active orders, with a system to accept orders, mark orders as ready, and another modal that shows customer information for contact and order cancellation. Not included is a way to edit orders, however the majority of the functionality is here. The contact customer modal works a lot like the order confirmation modal on the customer page, this time showing the order ID, the customer contact number, the items in the order, and two buttons. The first button cancels the order (drop it from the table), and the close button closes the modal by clearing the container it’s within.
+
+image::contactCustomer.png[]
+
+image::storeModalButtons.png[]
+
+This code shows a simplified version of what the Contact Customer button does, adding in a chunk of HTML for the modal itself, customer contact data, the order number, and a list of items and quantities. The two buttons utilise these functions to close and delete the row from the table.
+
+== Courier Page
+
+image::courierpage-u.png[]
+
+This page has the neatest implementation in JavaScript, using queries to assign data to objects with a large scope, preventing redundant queries. This implementation also involves asynchronous functions, which is the ideal way to get data from a database using the mysql plugin, as getting data back can take time.
+
+image::dbConnect.png[]
+
+The code first has a section to create a db connection using the host, user, password, and database information required, then sets a constant of the target store ID (referring to the only store in the table). After that, a one-time asynchronous function is performed, connecting to the database and calling update(), another asynchronous function with the majority of the code inside.
+
+image::courierUpdate.png[]
+
+This function is also asynchronous, which allows for the await/promise system, which facilitates database queries in a much better way than nesting multiple queries.
+
+image::crossquery1.png[]
+
+The getOrderData function uses a query that uses `INNER JOIN` to gather data from other tables as a pair of cross-table queries. This query allows for the orderData object to have only the children that it needs, by querying and assigning variables only when they're required for use in the rest of the script. This function also utilises `MIN()` and confirms that the order status is `toCollect` or `toDeliver` to get only the first order that is relevant to the courier.
+
+The JOIN clause definitely simplifies this process, as a single query can serve the purpose of three separate queries, as well as allowing the database server itself to handle the selection of the right row with the right ID, rather than the javascript itself. This process is reused for the `itemsData` object additionally, returning an array rather than a single `rowDataObject`:
+
+image::crossquery2.png[]
+
+This function also uses a `JOIN` clause to gather data from the menu table, based on the items in the order. This allows for the two sets of information to be accessed as a single set, with the name and the quantity next to each other. This would otherwise require two queries, with two arrays, two `rowDataObject` objects, or two dictionaries in the script itself. This query also has a `WHERE` clause that makes sure that the order items selected are guaranteed to be for the relevant store (even if this is the only store that exists).
+
+image::syncFunctions.png[]
+
+Finally is a set of non-asynchronous functions that serve simple purposes like adding HTML to the document, replacing the complex line “document.getElementByID(id).html +=” with a simpler, neater function called addHTML(id,s), as an example. Also included here are the functions that the big button performs, which either sets the order_status of the order in the table to “toDeliver” from “toCollect”, or deletes it from the table entirely. This could be replaced with an archived status, though for the purposes of this mockup that’s not necessary.
+
+== SQL Configuration
+
+image::sqlSetup.png[]
+
+The MySQL tables and databases were set up to be used alongside Javascript by specifying user information with a known password, with privileges allowing that user to access the database itself. This screenshot shows an sql script which can be executed to drop the table, delete the user, then recreate all the information required.
+
+image::sqlConstraints.png[]
+
+The tables themselves have many constraints, both specific constraints using `CHECK`, and general constraints like `NOT NULL` and `AUTO_INCREMENT`. The three `CHECK` constraints shown above each serve a different purpose:
+
+- The first `CHECK` constrains the order status to four distinct strings, to stop invalid statuses from being set.
+- The second `CHECK` makes sure that the quantity of an item in an order is in the valid range (nonzero and less than 11).
+- The third `CHECK` sets a minimum cost for menu items at £1, designed to prevent entering the cost wrong, setting an item too cheap (as an arbitrary value), or setting an item without a cost.
+
+== SQL Reports
+
+These reports are taken from MariaDB's console directly, performed on an in-use database made for testing. Some redundant data in the Order Items table has been removed.
+
+image::db-report-customers.png[]
+
+The customers table shows information about the customers, the key parts being the name, address, and contact number, which are used to contact the customer directly. The ID is also used for order data for a direct link. The rest of the data isn't used in the scope of this project.
+
+image::db-report-stores.png[]
+
+The stores table is very similar, containing key information about the name, address and most importantly, ID. The name is used on the title of each page in the applet, and the address is used for couriers to collect orders. The ID is used to connect this table with the Menu Items table and the Orders table.
+
+image::db-report-menu-items.png[]
+
+This table contains all of the information about the menu for each store, with a foreign keys for which store each row refers to, as well as a foreign key for what food type they are. This table is important for ordering as it contains cost, allergen info, food type, and the item name, allowing customers to make a purchasing decision based on that.
+
+image::db-report-orders.png[]
+
+The orders table is critical to preparation and delivery, containing the status of the order along with lots of other info, including which customer it's for, the total cost of the order, which store the order is assigned to, along with the date that the order was placed.
+
+image::db-report-order-items.png[]
+
+This table is a set of numbers, two foreign keys that refer to which menu item and which order the order item is supposed to be. The important data here is quantity, which impacts how many items are ordered in a specific order.
+
+
+
+''''
+
+== Reference List
+
+bibliography::[]

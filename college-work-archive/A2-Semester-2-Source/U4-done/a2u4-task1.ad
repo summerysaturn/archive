@@ -1,0 +1,244 @@
+= Database Test Plan
+:bibliography-database: u4.bib
+:bibliography-style: harvard-cite-them-right
+:bibliography-locale: en-GB
+:bibliography-sort: []
+:icons: font
+:imagesdir: t1-img
+:data-uri:
+:pdf-theme: landscape-theme.yml
+:pdf-themesdir: /home/lyla/Documents/a2-s2-college/U2-done/
+
+.Database Testing
+[cols="1,2,6a,6a,2a"]
+|===
+|# |Test Name |Acceptance Criteria |Actual Result |Pass/Fail
+
+|1
+|Attempting to place empty order in UI
+|
+. The HTML button should have the `disabled` tag removed.
+. Clicking the button with an empty cart should work
+. No database query should occur
+|
+- [x] The HTML button should have the `disabled` tag removed.
+- [x] Clicking the button with an empty cart should work
+- [x] No database query should occur
+
+image::test1-form.png[]
+image::test1-report.png[]
+|
+== Pass
+
+|2
+|Modifying the order to include invalid values should be handled gracefully (1st test)
+|
+. Modify js script to add invalid value to the quantity in the cart
+. Having an order placed with 20 item quantity shouldn't result in an order being placed (Original max is 10 items)
+|
+- [x] Modify js script to add invalid value to the quantity in the cart
+- [x] Having an order placed with 20 item quantity shouldn't result in an order being placed (Original max is 10 items)
+
+image::test2-console.png[]
+
+The function errors out, but the validation in the database holds.
+|
+== Pass
+
+|3
+|Modifying the order to include invalid values should be handled gracefully (2nd test)
+|
+. Modify js script to add invalid value to the quantity in the cart
+. Placing an order with an invalid (string) quantity shouldn't result in an order being placed
+|
+- [x] Modify js script to add invalid value to the quantity in the cart
+- [x] Placing an order with an invalid (string) quantity shouldn't result in an order being placed
+
+image::test3-form.png[]
+image::test3-console.png[]
+
+The function errors out, but the validation in the database holds.
+|
+== Pass
+
+|4
+|Modifying the order confirmation status update value in the store page should be handled gracefully.
+|
+. Modify js script to add invalid value to the acceptOrder `status` function
+. The order shouldn't update in the database to an invalid value
+|
+- [x] Modify js script to add invalid value to the acceptOrder function
+- [x] The order shouldn't update in the database to an invalid value
+
+image::test4-1.png[]
+image::test4-2.png[]
+image::test4-3.png[]
+
+The change fails gracefully, as the constraints in the database itself hold.
+|
+== Pass
+
+|5
+|Accepting an order that doesn't exist should fail gracefully
+|
+. Modify js script to add invalid value to the acceptOrder `i` function
+. The order shouldn't update in the database to an invalid value
+. Additionally, an error should occur
+|
+- [x] Modify js script to add invalid value to the acceptOrder `i` function
+- [x] The order shouldn't update in the database to an invalid value
+- [ ] No error occurs
+
+image::test5-1.png[]
+image::test5-2.png[]
+
+The console doesn't report an error, but the page doesn't progress and the report shows no new element was added. Presumably, this means that the status could be updated for an arbitrary order from any client, regardless of what state or store owns it. Considering this a fail; good enough for a mockup, but not at all functional for a production build.
+|
+== Fail
+
+|6
+|Test order page customer contact button for invalid ID
+|
+. Add a new order with an invalid customer ID reference
+. If the order isn't added, consider a pass.
+. If it is, a console error when loading contact info would be a fail.
+|
+- [x] Add a new order with an invalid customer ID reference
+- [x] If the order isn't added, consider a pass.
+
+image::test6.png[]
+
+Order isn't added due to a 'foreign key constraint'.
+|
+== Pass
+
+|7
+|Test courier page loading a 'normal' order.
+|
+. Place a valid order using the customer page as the only order
+. Progress the order to "toCollect" using store page
+. Courier page loads the order successfully
+|
+- [x] Place a valid order using the customer page as the only order
+- [x] Progress the order to "toCollect" using store page
+- [x] Courier page loads the order successfully
+|
+== Pass
+
+|8
+|Test courier page assigning invalid progression to order (Collection Stage)
+|
+. Modify javascript to set order to "invalid" instead of "toDeliver"
+. Database constraints should prevent the change
+. Error in console, page doesn't progress, database stays clean
+|
+- [x] Modify javascript to set order to "invalid" instead of "toDeliver"
+- [x] Database constraints should prevent the change
+- [x] Error in console, page doesn't progress, database stays clean
+
+image::test8-1.png[]
+image::test8-2.png[]
+|
+== Pass
+
+|9
+|Test adding an order using a query with no child items
+|
+. Add an order using the command line that would be equivalent to an order produced in-app
+. The store and courier page should display them as normal, just with no items included
+|
+- [x] Add an order using the command line that would be equivalent to an order produced in-app
+- [x] The store and courier page should display them as normal, just with no items included
+
+image::test9-1.png[]
+image::test9-2.png[]
+image::test9-3.png[]
+image::test9-4.png[]
+|
+== Pass
+
+|10
+|Test adding an order using a query with an invalid customer ID
+|
+. Add an order using the command line that would be equivalent to an order produced in-app, with an invalid customer ID reference
+. The constraints in the database should prevent this
+|
+- [x] Add an order using the command line that would be equivalent to an order produced in-app, with an invalid store ID reference
+- [x] The constraints in the database should prevent this
+
+image::test10.png[]
+|
+== Pass
+
+|11
+|Test adding an order using a query with an invalid store ID
+|
+. Add an order using the command line that would be equivalent to an order produced in-app, with an invalid store ID reference
+. The constraints in the database should prevent this
+|
+- [x] Add an order using the command line that would be equivalent to an order produced in-app, with an invalid store ID reference
+- [x] The constraints in the database should prevent this
+
+image::test11.png[]
+|
+== Pass
+
+|12
+|Test adding new menu_item with invalid store reference
+|
+. Use a query to add a new menu item, with an invalid store reference (10)
+. Should be stopped by constraints
+. Database remains clean
+|
+- [x] Use a query to add a new menu item, with an invalid store reference (10)
+- [x] Should be stopped by constraints
+- [x] Database remains clean
+
+image::test12.png[]
+|
+== Pass
+
+|13
+|Test adding a new customer to the database, the applet should work the same (Jane Doe)
+|
+. Add a new customer with new information
+. The applet should work the same; Check customer contact info, should still be the same
+|
+- [x] Add a new customer with new information
+- [x] The applet should work the same; Check customer contact info, should still be the same
+
+image::test13-1.png[]
+image::test13-2.png[]
+|
+== Pass
+
+|14
+|Test adding a store with an invalid or different ID
+|
+. Add a store with an invalid id (-1)
+. Adding the store should fail
+. Database remains clean
+|
+- [x] Add a store with an invalid id (-1)
+- [x] Adding the store should fail
+- [x] Database remains clean
+
+image::test14-1.png[]
+|
+== Pass
+
+|15
+|
+|
+. Add a store with a large id (100)
+. Applet should still show Plant B (id=1) as the store label
+|
+- [x] Add a store with a large id (100)
+- [x] Applet should still show Plant B (id=1) as the store label
+
+image::test15-1.png[]
+image::test15-2.png[]
+|
+== Pass
+
+|===

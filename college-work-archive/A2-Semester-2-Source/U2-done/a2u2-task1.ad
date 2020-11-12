@@ -1,0 +1,41 @@
+= Network Diagram
+:bibliography-database: u2.bib
+:bibliography-style: harvard-cite-them-right
+:bibliography-locale: en-GB
+:bibliography-sort: []
+:icons: font
+:imagesdir: img
+:data-uri:
+Charlotte Ward, Unit 2, Task 1
+
+.Diagram of the overall network topology
+image::t1-network.png[Diagram of the overall network topology]
+
+== Site Configuration
+
+The main site uses the IP range `10.0.x.x/16`. This is divided up into:
+
+* `10.0.0.x` - Networking equipment, relating to Routers, Firewalls (not present), etc.
+* `10.0.1.x` - Server hardware. In this instance, the only server is at address 10.0.1.1 and handles DHCP, Web and FTP
+* `10.0.2.x` - Client hardware. There's two laptops and three desktops in this range, assigned using DHCP. There's a limit of 256 clients in this range.
+
+Realistically, additional IP ranges could be assigned for different device-types. Due to the Subnet Mask of `255.255.0.0`, there are 253 additional IP ranges available using this system.
+
+This configuration is mirrored for the three smaller sites, with fewer client devices, and differing configuration on the servers; DHCP and FTP remain, however the off-site servers no longer host the webpage.
+
+== `50.0.0.x/30` Range
+
+This IP range relates to the public addresses for all the routers on the system. This range is required for operation of the network, as each router has a Routing table to route packets to the desired network.
+
+.The routing table configuration for the 50.0.0.5 router
+image::t1-routingtable.png[The routing table configuration for the 60.0.0.1 router]
+
+* `50.0.0.1` relates to Site 1 (Main site)
+* `50.0.0.2` relates to Site 2
+* `50.0.0.3` relates to Site 3
+* `50.0.0.4` relates to Site 4
+* `50.0.0.5` relates to the external DNS & Office 365 server
+
+== `60.0.x.x/16` Range
+
+This IP range refers to a site not owned by MK Agents, in this diagram providing DNS services along with an Office 365 homepage. This is replaced by an external DNS server and Microsoft servers in reality, but in this case it provides basic functionality à la realistic implementations; the four DHCP servers assign `60.0.1.1` (the external server) as the DNS server, much like how a real configuration would set the DNS server to be `1.1.1.1` or similar.

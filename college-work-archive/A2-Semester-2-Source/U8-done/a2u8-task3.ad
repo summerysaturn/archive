@@ -1,0 +1,307 @@
+= Unit 8 Task 3 - Documentation, Troubleshooting, Maintenance
+:bibliography-database: u8.bib
+:bibliography-style: harvard-cite-them-right
+:bibliography-locale: en-GB
+:bibliography-sort: []
+:icons: font
+:imagesdir: img
+:data-uri:
+Charlotte Ward
+:toc:
+
+== Networking Configuration Documentation
+
+=== Connection
+
+==== Ubuntu
+
+Ubuntu has a built in network utility thanks to Gnome, facilitating network discovery, connection, status information and various other features. This utility can be used to connect to WiFI networks, as well as to provide information on wired network connections.
+
+.Click the system dropdown in the top right, then "Select Network"
+image::wifi1.png[Click the system dropdown in the top right, then "Select Network"]
+
+.This popup shows all nearby networks, their strength, and whether they're encrypted
+image::wifi2.png[This popup shows all nearby networks, their strength, and whether they're encrypted]
+
+.After clicking connect, the network will prompt for a password
+image::wifi3.png[After clicking connect, the network will prompt for a password]
+
+.The "Wifi Not Connected" section has been replaced by the SSID of the network
+image::wifi4.png[The "Wifi Not Connected" section has been replaced by the SSID of the network]
+
+==== iOS
+
+Connection to a network in iOS is similarly easy, requiring the usage of the Settings app. The Settings app contains a "Wi-Fi" submenu, that can be used for network discovery and connection. It also stores previous connection information, shows connection status, and has a toggle for WiFi overall.
+
+.The settings app discovers nearby networks for easy connection
+image::iphonewifi1.jpg[The settings app discovers nearby networks for easy connection]
+
+.Tapping on a network prompts a password entry
+image::iphonewifi2.jpg[Tapping on a network prompts a password entry]
+
+.Upon a successful connection the SSID appears at the top with a tick
+image::iphonewifi3.jpg[Upon a successful connection the SSID appears at the top with a tick]
+
+==== Nintendo Switch
+
+The system settings app has an Internet tab for wired and wireless network info.
+
+image::wifiswitch1.jpg[The system settings app has an Internet tab for wired and wireless network info]
+
+This section discovers nearby networks for configuration.
+
+image::wifiswitch2.jpg[This section discovers nearby networks for configuration]
+
+Once the password has been entered, the system test-connects to Nintendo servers.
+
+image::wifiswitch3.jpg[Once the password has been entered, the system test-connects to Nintendo servers]
+
+The Internet tab now shows various info about the connection status, including the IP.
+
+image::wifiswitch4.jpg[The Internet tab now shows various info about the connection status, including the IP]
+
+=== Testing the Connection
+
+The Nintendo Switch settings app shows information about the network connection which can be utilised to test the network connection between two devices. This information can be found out on other devices through multiple methods, but it is usually easiest to use the same utility that is used for conection.
+
+.This IP address field can be used to check the connection with `ping`
+image::wifiswitch5.jpg[This IP address field can be used to check the connection with `ping`]
+
+The `ping` command shows various information on returned pings, the most significant of which being the latency (time). A lack of responses indicates that the target address is unreachable.
+
+.Terminal shown using the `ping` command to test the connection with the Nintendo Switch
+image::pingterminal.png[Terminal shown using the `ping` command to test the connection with the Nintendo Switch]
+
+As well as this, the network connection to the greater internet can be tested using `wget`. This type of test relies on a known-working network address, for which something like `google.com` is a good example due to infrequent downtime.
+
+.A failed connection and a successful connection example using `wget` to download from `https://google.com/`
+image::wget.png[A failed connection and a successful connection example]
+
+== Troubleshooting Research Tasks
+
+=== Dell Inspiron 530
+
+NOTE: A Dell Inspiron 530 is having problems powering up. When trying to turn the machine on, the computer gives 6 short beeps, waits and then repeats this. Nothing is displayed on the screen.
+
+Search term used:
+
+image::search1.png[Dell inspiron 530 beep codes]
+
+.A chart of beep-codes from Microsoft's website.
+image::microsoft-beep.png[A chart of beep-codes from Microsoft's website.]
+
+According to Dell's support article for desktop beep-codes, 6 short beeps, a gap, then repetition implies Beep Code 6. This beep code is described as "Video BIOS", and relates to a video card fault or chip failure cite:[Dell1]. Dell's recommended solution is to resolve the hardware issue with a built-in or online diagnostic cite:[Dell1], however my suggestion would be to replace the GPU (provided it's not integrated into the CPU) in the system as the first step in troubleshooting.
+
+=== Windows Update has failed
+
+NOTE: Windows Update has failed with an error code of 0x8007000e.
+
+Search term used:
+
+image::search2.png[Windows Update has failed with an error code of 0x8007000e.]
+
+This update error code can occur with feature updates on Windows, commonly with distortion appearing on-screen during the update. This could have many causes, the most likely of which relates to problems with the video card and OS integration. According to online forums, there are a few things that can be done which can contribute to fixing this issue:
+
+- Making sure that video drivers are up to date, and correctly installed
+- Performing a BIOS update and trying again
+- Installing the update from an ISO installer
+
+The last solution writes over the existing operating system while retaining user settings and data, which means that the issue of updating can't occur, as nothing is being 'updated'. Even so, it's a complex solution for an issue that may be solved by the other steps cite:[MSupport1] cite:[MSupport2].
+
+.A direct question post with an answer and a posted solution
+image::wilwave.png[A direct question post with an answer and a posted solution]
+
+.The Q&A post that provided the most info about this topic
+image::monkey57.png[The Q&A post that provided the most info about this topic]
+
+=== Slow and intermittent WiFi
+
+NOTE: Your WiFi network connection appears slow and intermittent. You think there might be some kind of signal issue. Give troubleshooting steps.
+
+Search term used:
+
+image::search3.png[wifi connection troubleshooting]
+
+There are a few factors that contribute to WiFi connections being slow or intermittent, with multiple solutions for stability and speed. These include:
+
+==== Signal Strength
+
+The most obvious problem relating to connection issues is to do with signal strength. This issue usually relates to the distance from the access point, though it can also be an issue if there are certain materials between the client and the access point: thick concrete, for example, can inhibit a WiFi signal and cause issues.
+
+This can be solved through better positioning of wireless access points and home routers, placing them centrally in the area of intended use, and having wireless repeaters should the area be too large or have blockages cite:[cnet1].
+
+==== Signal Interference
+
+Similar to signal strength, interference can impact WiFi signals significantly, lowering the signal-to-noise ratio, making the connection slow or unstable. This issue is most common in built up areas, with various WiFi bands being used up by other people in the local area. This occurs most commonly in the 2.4GHz range due to the penetration of the signal, with the 5GHz range being less congested but having a lower range cite:[Is5Ghz].
+
+This can be solved by switching all home routers, repeaters, and access points to use a less congested band in either the 2.4GHz range or preferably the 5GHz range, if possible cite:[cnet1].
+
+==== Bandwidth
+
+Depending on the quantity of users on the network, bandwidth could be a consideration for slow or intermittent WiFi. If other users have particularly high network demands, like with streaming or general downloading, all the bandwidth could be used up. The solution for this issue relates to freeing up this bandwidth, if possible, by making sure that all unnecessary devices or processes are shut off. Additionally, security can impact bandwidth usage, with unsecured networks potentially having people leech bandwidth cite:[cnet1].
+
+==== ISP Related Issue
+
+Sadly, not all issues relating to networking connections can be solved on-site. Networking infrastructure upstream from a household or business can fail, requiring the ISP to resolve any issues involved. Long-term issues can also arise, like faulty cabling, that can take lots of time for an ISP to fix. Sadly, there's no reliable solution for this kind of issue outside of changing ISP, if possible cite:[cnet1].
+
+== PC Hardware Maintenance
+
+=== Step 1: CPU Heatsink
+
+My CPU Fan is in a pull configuration, meaning the heatsink is easily accessed to clean. The right-side of the heatsink in this image is where the dust would collect, with the fan on the left side pulling air through the fins. This configuration is preferential to a fan that pushes air through, as the fan would need to be removed in order for dust to be cleaned out.
+
+.Overview of PC internals showing clean CPU heatsink
+image::10.jpg[Overview of PC internals showing clean CPU heatsink]
+
+=== Step 2: GPU Heatsink
+
+The GPU power, output cables, and screws need to be removed in order to access the GPU's heatsink for cleaning. Since the card's cooler is an open design, access to the fins is relatively easy when compared with blower-style coolers. This being said, the card didn't require any cleaning in this instance.
+
+.Unscrewing the GPU
+image::3.jpg[Unscrewing the GPU]
+
+.The PCI-E power cables have been removed (the right side of the card)
+image::5.jpg[The PCI-E power cables have been removed (the right side of the card)]
+
+.Removed graphics card ready for cleaning
+image::4.jpg[Removed graphics card ready for cleaning]
+
+=== Step 3: Front Dust Filter
+
+The front dust filter for this case is magnetic and easily removed by swinging out the side-panel for access. This filter captures the majority of the dust entering the system, with barely any dust on the internal components in comparison. This is by far the messiest section of maintenance, with the best solution involving taking the filter outside to dispose of dust.
+
+.Magnetic dust filter on the front of the case
+image::6.jpg[Magnetic dust filter on the front of the case]
+
+=== Step 4: PSU Dust Filter
+
+This case also features a dust filter for the Power Supply Unit (PSU), allowing for easy cleaning. In this case, the dust-filter is clear due to the PC being placed on top of a desk during normal operation.
+
+.The filter slides out for easy access, provided the back of the case isn't blocked
+image::8.jpg[The filter slides out for easy access, provided the back of the case isn't blocked]
+
+=== Step 5: Internal Dusting
+
+While the front panel dust filter is extremely effective, finer dust can make it through, landing on the internal components, case surfaces, and case fans. These fans shown are at the front of the case, pulling air in, and have minor levels of dust. Additionally, the panel behind these fans has some light dust too.
+
+.Dust situated on the front case-fans, requiring light dusting to clean
+image::9.jpg[Dust situated on the front case-fans, requiring light dusting to clean]
+
+== PC Software Maintenance
+
+Software maintenance on Ubuntu has two major methods. The command line (bash) can be used in conjunction with APT (Advanced Package Tool), the primary package manager for the distribution, to update and clean up packages on the system. Additionally, Ubuntu includes software designed to simplify basic software maintenance for end-users, derived from Gnome. While simpler, this software can perform most of the essential maintenance required for a system.
+
+=== Ubuntu (Gnome) Software
+
+==== Disks (`gnome-disk-utility`)
+
+The application `gnome-disk-utility` is designed to manage disks and partitions, with functionality for formatting, disk imaging, benchmarking, SMART self-tests, and filesystem checks/repair. This functionality can be used to analyse hard drives, ranging from Solid State memory to Flash memory. The partitions can be checked for errors using this utility, however
+
+WARNING: Any partition has to be checked while it is unmounted; This means that a live-usb should be used for checking the host filesystem, as it cannot be unmounted while the computer is booted from it.
+
+.`gnome-disk-utility` (Disks) user interface
+image::CheckFilesystem.png[gnome-disk-utility (Disks) user interface]
+
+.Confirmation Popup
+image::CFConfirmation.png[Confirmation Popup]
+
+.A successful filesystem check result
+image::CFResult.png[A successful filesystem check result]
+
+==== Settings (`gnome-settings`)
+
+The `gnome-settings` app can clear temporary files and the rubbish folder. This process can be automated, with the settings shown on the user interface screenshot depicting
+
+.`gnome-settings` (Settings) user interface
+image::SettingsStorage.png[gnome-settings (Settings) user interface]
+
+.Rubbish Bin deletion confirmation popup
+image::SettingsRubbish.png[Rubbish Bin deletion confirmation popup]
+
+.Temporary Storage deletion confirmation popup
+image::SettingsTemp.png[Temporary Storage deletion confirmation popup]
+
+=== Command Line
+
+As described earlier, APT is the core system by which Debian manages packages. Using apt, it's possible to perform multiple operations that contribute towards the maintenance of a PC's software, primarily involving cleaning out old packages and updating packages. This image shows the set of commands that are involved with this process.
+
+image::CommandShowcase.png[]
+
+* `apt update` refreshes the package index from the apt sources on the system.
+* `apt upgrade` updates existing packages, should updates be available.
+* `apt autoremove` cleans up packages that are no longer needed.
+
+(For the purposes of this log, `apt` is replaced with `apt-get` which, while identical in functionality, doesn't have any issues with terminal history. Additionally, some repeated lines have been removed for conciseness)
+
+----
+char@aurora ~
+$> sudo apt-get update
+
+Hit:1 http://gb.archive.ubuntu.com/ubuntu focal InRelease
+...
+Get:15 http://gb.archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [528 B]
+Fetched 423 kB in 1s (662 kB/s)
+Reading package lists... Done
+
+char@aurora ~
+$> sudo apt-get upgrade
+
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+The following packages will be upgraded:
+  python3-update-manager strace update-manager update-manager-core
+4 to upgrade, 0 to newly install, 0 to remove and 0 not to upgrade.
+Need to get 979 kB of archives.
+After this operation, 98.3 kB of additional disk space will be used.
+Do you want to continue? [Y/n]
+Get:1 http://gb.archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-update-manager all 1:20.04.10 [36.5 kB]
+Get:2 http://gb.archive.ubuntu.com/ubuntu focal-updates/main amd64 update-manager-core all 1:20.04.10 [11.3 kB]
+Get:3 http://gb.archive.ubuntu.com/ubuntu focal-updates/main amd64 update-manager all 1:20.04.10 [551 kB]
+Get:4 http://gb.archive.ubuntu.com/ubuntu focal-updates/main amd64 strace amd64 5.5-3ubuntu1 [380 kB]
+Fetched 979 kB in 1s (1,208 kB/s)
+(Reading database ... 264637 files and directories currently installed.)
+Preparing to unpack .../python3-update-manager_1%3a20.04.10_all.deb ...
+Unpacking python3-update-manager (1:20.04.10) over (1:20.04.9) ...
+...
+Preparing to unpack .../strace_5.5-3ubuntu1_amd64.deb ...
+Unpacking strace (5.5-3ubuntu1) over (4.26-0.2ubuntu3) ...
+Setting up strace (5.5-3ubuntu1) ...
+...
+Processing triggers for man-db (2.9.1-1) ...
+
+char@aurora ~
+$>sudo apt-get autoremove
+
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages will be REMOVED
+  fonts-lato libruby2.7 rake ruby ruby-minitest ruby-net-telnet ruby-paint
+  ruby-power-assert ruby-test-unit ruby-trollop ruby-xmlrpc ruby2.7
+  rubygems-integration
+0 to upgrade, 0 to newly install, 13 to remove and 0 not to upgrade.
+After this operation, 30.8 MB disk space will be freed.
+Do you want to continue? [Y/n]
+(Reading database ... 229902 files and directories currently installed.)
+Removing fonts-lato (2.0-2) ...
+dpkg: warning: while removing fonts-lato, directory '/usr/share/fonts/truetype/lato' not empty so not removed
+Removing ruby-trollop (2.0-2) ...
+...
+Removing rubygems-integration (1.16) ...
+Processing triggers for libc-bin (2.31-0ubuntu9) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for fontconfig (2.13.1-2ubuntu3) ...
+
+char@aurora ~
+$>echo All done!
+
+All done!
+----
+
+Following this, the sources are checked for new package updates, all packages are upgraded, and all redundant packages are removed.
+
+== References
+
+bibliography::[]

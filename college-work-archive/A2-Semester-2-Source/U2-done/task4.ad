@@ -1,0 +1,290 @@
+= Simulation Mode Test Plan
+:bibliography-database: u2.bib
+:bibliography-style: harvard-cite-them-right
+:bibliography-locale: en-GB
+:bibliography-sort: []
+:icons: font
+:imagesdir: t4-img
+:data-uri:
+:pdf-theme: landscape-theme.yml
+:pdf-themesdir: /home/lyla/Documents/a2-s2-college/U2/
+
+image::t1-network.png[]
+
+[cols="1,2,6a,6a,2a"]
+|===
+|# |Test Name |Acceptance Criteria |Actual Result |Pass/Fail
+
+|1
+|ping between site 1 and site 1
+|
+- ping works successfully
+- sim mode shows the packet reaches the destination then returns
+- console shows the replies
+|
+- [x] ping works successfully
+- [x] sim mode shows the packet reaches the destination then returns
+- [x] console shows the replies
+
+image::test1-console.png[]
+image::test1-log.png[]
+|
+Pass
+
+|2
+|ping between site 2 and site 2
+|
+- ping works successfully
+- sim mode shows the packet reaches the destination then returns
+- console shows the replies
+|
+- [x] ping works successfully
+- [x] sim mode shows the packet reaches the destination then returns
+- [x] console shows the replies
+
+image::test2-console.png[]
+image::test2-log.png[]
+
+TIP: The log has extra steps as the target device in this test is a laptop, so additional packets are sent due to the wireless access point.
+|
+Pass
+
+|3
+|ping between site 3 and site 3
+|
+- ping works successfully
+- sim mode shows the packet reaches the destination then returns
+- console shows the replies
+|
+- [x] ping works successfully
+- [x] sim mode shows the packet reaches the destination then returns
+- [x] console shows the replies
+
+image::test3-console.png[]
+image::test3-log.png[]
+|
+Pass
+
+|4
+|ping between site 4 and site 4
+|
+- ping works successfully
+- sim mode shows the packet reaches the destination then returns
+- console shows the replies
+|
+- [x] ping works successfully
+- [x] sim mode shows the packet reaches the destination then returns
+- [x] console shows the replies
+
+image::test4-console.png[]
+image::test4-log.png[]
+|
+Pass
+
+|5
+|ping from site 1 to site 2
+|
+- the first two packets may or may not be dropped by the two routers in the way
+- the routing tables work successfully
+- the packet reaches the destination then returns
+- the console shows the replies
+|
+- [ ] the first two packets may or may not be dropped by the two routers in the way
+- [x] the routing tables work successfully
+- [x] the packet reaches the destination then returns
+- [x] the console shows the replies
+
+image::test5-console.png[]
+image::test5-log.png[]
+|
+Pass
+
+|6
+|ping from site 1 to site 3
+|
+- the first two packets may or may not be dropped by the two routers in the way
+- the routing tables work successfully
+- the packet reaches the destination then returns
+- the console shows the replies
+|
+- [ ] the first two packets may or may not be dropped by the two routers in the way
+- [x] the routing tables work successfully
+- [x] the packet reaches the destination then returns
+- [x] the console shows the replies
+
+image::test6-console.png[]
+image::test6-log.png[]
+|
+Pass
+
+|7
+|ping from site 1 to site 4
+|
+- the first two packets may or may not be dropped by the two routers in the way
+- the routing tables work successfully
+- the packet reaches the destination then returns
+- the console shows the replies
+|
+- [x] the first two packets may or may not be dropped by the two routers in the way
+- [x] the routing tables work successfully
+- [x] the packet reaches the destination then returns
+- [x] the console shows the replies
+
+image::test7-console.png[]
+image::test7-log.png[]
+
+TIP: In this case, the first two packets were dropped due to the routers.
+|
+Pass
+
+|8
+|ping from site 1 to site 6
+|
+- the first two packets may or may not be dropped by the two routers in the way
+- the routing tables work successfully
+- the packet reaches the destination then returns
+- the console shows the replies
+|
+- [ ] the first two packets may or may not be dropped by the two routers in the way
+- [x] the routing tables work successfully
+- [x] the packet reaches the destination then returns
+- [x] the console shows the replies
+
+image::test8-console.png[]
+image::test8-log.png[]
+|
+Pass
+
+|9
+|test DHCP assignment on site 1
+|
+- Setting IP to DHCP-assigned should query the server
+- The server should reply with an IP in the 10.0.2.x range
+|
+- [x] Setting IP to DHCP-assigned should query the server
+- [x] The server should reply with an IP in the 10.0.2.x range
+
+image::test9-config.png[]
+image::test9-log.png[]
+|
+Pass
+
+|10
+|test DHCP assignment on site 2
+|
+- Setting IP to DHCP-assigned should query the server
+- The server should reply with an IP in the 20.0.2.x range
+|
+- [x] Setting IP to DHCP-assigned should query the server
+- [x] The server should reply with an IP in the 20.0.2.x range
+
+image::test10-config.png[]
+image::test10-log.png[]
+|
+Pass
+
+|11
+|test DHCP assignment on site 3
+|
+- Setting IP to DHCP-assigned should query the server
+- The server should reply with an IP in the 30.0.2.x range
+|
+- [x] Setting IP to DHCP-assigned should query the server
+- [x] The server should reply with an IP in the 30.0.2.x range
+
+image::test11-config.png[]
+image::test11-log.png[]
+|
+Pass
+
+|12
+|test DHCP assignment on site 4
+|
+- Setting IP to DHCP-assigned should query the server
+- The server should reply with an IP in the 40.0.2.x range
+|
+- [x] Setting IP to DHCP-assigned should query the server
+- [x] The server should reply with an IP in the 40.0.2.x range
+
+image::test12-config.png[]
+image::test12-log.png[]
+|
+Pass
+
+|13
+|test DNS from site 1 - http://mkagents.com
+|
+- The client queries the DNS server successfully
+- The DNS server replies with an address
+- The client requests the webpage from the address
+- The webpage displays properly
+|
+- [x] The client queries the DNS server successfully
+- [x] The DNS server replies with an address
+- [x] The client requests the webpage from the address
+- [x] The webpage displays properly
+
+image::test13-browser.png[]
+image::test13-log.png[]
+
+TIP: This log readout is much shorter than the other three due to the HTTP server being on the same network (`10.0.1.1`)
+|
+Pass
+
+|14
+|test DNS from site 2 - http://mkagents.com
+|
+- The client queries the DNS server successfully
+- The DNS server replies with an address
+- The client requests the webpage from the address
+- The webpage displays properly
+|
+- [x] The client queries the DNS server successfully
+- [x] The DNS server replies with an address
+- [x] The client requests the webpage from the address
+- [x] The webpage displays properly
+
+image::test14-browser.png[]
+image::test14-log.png[]
+|
+Pass
+
+|15
+|test DNS from site 3 - http://mkagents.com
+|
+- The client queries the DNS server successfully
+- The DNS server replies with an address
+- The client requests the webpage from the address
+- The webpage displays properly
+|
+- [x] The client queries the DNS server successfully
+- [x] The DNS server replies with an address
+- [x] The client requests the webpage from the address
+- [x] The webpage displays properly
+
+image::test15-browser.png[]
+image::test15-log.png[]
+|
+Pass
+
+|16
+|test DNS from site 4 - http://mkagents.com
+|
+- The client queries the DNS server successfully
+- The DNS server replies with an address
+- The client requests the webpage from the address
+- The webpage displays properly
+|
+- [x] The client queries the DNS server successfully
+- [x] The DNS server replies with an address
+- [x] The client requests the webpage from the address
+- [x] The webpage displays properly
+
+image::test16-browser.png[]
+image::test16-log.png[]
+|
+Pass
+
+
+
+|===

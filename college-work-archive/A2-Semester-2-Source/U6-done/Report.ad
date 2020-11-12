@@ -1,0 +1,345 @@
+:bibliography-database: u6.bib
+:bibliography-style: harvard-cite-them-right
+:bibliography-locale: en-GB
+:bibliography-sort: []
+:icons: font
+:pdf-theme: quote.yml
+:pdf-themesdir: /home/lyla/Documents/a2-s2-college/U6/
+
+= Do digital technologies improve life or distract from it? The impacts of social media on mental health and wellbeing.
+
+Charlotte Ward
+
+Milton Keynes College
+
+== Abstract
+
+There is a belief that social media has the potential to have a profound effect on the way we view the world. It’s unclear exactly what these effects are, and to what extent they effect us. This report focusses on establishing a connection between the types of social media used and the overall perception of those platforms, scoring them based off of the perceived effects on Mental Health, Social Capital and the individual's perception of Current Events. This report establishes that generally social media is seen as positive, with Messaging apps having the best perceived outcome for the three criteria. No connection was established between time spent on social media and the perceived outcomes on any of these criteria.
+
+== Literature Review
+
+Due to the unclear nature of the effects social media can have on the individual, this literature review critically evaluates various sources focussing on social media to provide a further understanding of the topic. The sources identified relate to three overarching themes that are involved in the topic of social media; Mental Health, Social Capital and Current Events. These themes will be carried through into the rest of this report.
+
+=== Effects on Individual Mental Health
+
+There is conflicting evidence from the literature about whether social media has a positive or negative impact on mental health. citet:[Strickland2014] identified core themes in this discussion, all relating to potential topics of study relating to social media's effects:
+
+- The impact of sedentary behaviours linked to social media use on mental health.
+- Displaced behaviour theory, relating to time spent using social media and how much this displaces other activity.
+- Sleep interruption due to blue light, affecting the circadian rhythm.
+- Social media's effects on romantic and platonic relationships.
+
+These themes contribute to the understanding of how issues caused by social media can manifest, indicating that harmful effects are dependant on how social media is used. This thesis outlined the potential pitfalls of social media use, explaining how certain utilisations of social media can have negative impacts, in order to contribute to the overall theory that social media can have an effect on mental health.
+
+Similar to this thesis, citet:[Dogra2018] presented themes as to how social media use can lead to detrimental effects on mental health. These themes revolved around the perceptions of social media platforms held by adolescents, identifying the possibility that the perception of these platforms can have a larger impact than usage overall. These themes include:
+
+- The belief that social media causes mood and anxiety disorders for some people.
+- The view that social media facilitates bullying.
+- That social media is often framed as a form of addiction.
+
+This study shows that the perception of social media is seen as negative by the majority of adolescents, believing that there are inherent negative effects on mental health. This being said, the study establishes that it's unclear whether younger participants truly understand what mental health involves, stating that they don't understand what mental health is, or giving incorrect or vague explanations, indicating a lack of understanding.
+
+Overall, citet:[Dogra2018] show that the perception of social media is negative, being seen as contributing to mental health problems, bullying and addiction. In spite of this, self-reported social media usage is relatively high, with people reporting that they were dependent on social media, though more commonly referring to 'some people', preferring to generalise than self-identify their experience.
+
+citet:[Barry2017] investigates social media use in adolescents, using self-reported data from parent-adolescent pairs based on symptoms of mental health problems based on the DSM-5, along with self-reported loneliness and fear of missing out (FoMO). FoMO was surveyed with questions like "I get worried that my friends are having fun without me". This study has a few findings that reinforce the other literature referenced, namely that social media activity has a positive relationship with various symptoms of mental health problems, loneliness, and FoMO. The DSM-5 symptoms referenced are:
+
+- Attention-deficit/hyperactivity disorder (ADHD/ADD)
+- Oppositional defiant disorder (ODD)
+- Conduct disorder (CD)
+- Anxiety
+- Depression
+
+Overall, the study found there was a correlation between social media use and symptoms of mental health problems. Interestingly, the reported loneliness and FoMO from adolescents correlated with parent-reported DSM-5 symptoms, indicating that feelings of loneliness and FoMO can contribute to mental health problems. Additionally, anxiety and depressive symptoms were the highest reported among parents, with adolescents reporting high FoMO.
+
+While social media has been shown by this literature to have the potential for negative effects, citet:[Pavalanathan2015] shows that there can be additional benefits. This study focusses on mental health communities on Reddit, analysing the prevalence of so-called 'throwaway' accounts. These accounts are made by individuals to post content, then log out, providing an extra layer of anonymity to their posts. Additionally, these types of accounts are 6 times more common on mental health communities, as opposed to more traditional communities. This anonymity is shown to have particular effects:
+
+NOTE: "We observe that mental health discourse from throwaways is considerably disinhibiting and exhibits increased negativity, cognitive bias and self-attentional focus, and lowered self-esteem."
+
+cite:[Pavalanathan2015]
+
+While these effects may sound negative, research in other fields shows that disinhibition and the resultant self-disclosure can be an effective healing process. As a result of this, citet:[Pavalanathan2015] argue that the anonymity afforded by throwaway accounts can be beneficial to self healing, allowing for candid discussion that may otherwise go unspoken.
+
+From these sources it's clear that there's an established understanding that social media can have negative effects on users. This being said, the literature also shows that there's a potential for constructive and healthy social media usage; further research should aim to identify how social media can be used as a tool for healing, alongside any negative effects and risks.
+
+=== Effects on the Understanding of News and Current Events
+
+In addition to mental health, there is evidence that social media can have an impact on the consumption of news and related media. citet:[Lazer1094] comment on the prevalence and impact of 'fake news', relating to media that is constructed to spread misinformation or disinformation, usually on political topics. The article concludes that it's unclear precisely to what extent fake news exists on social media, along with the overall impact it has.
+
+From the article, it's clear that further research into the topic of fake news should be conducted. The established impacts on the 2016 U.S. election alone indicate that this subject is quickly becoming a key area of interest when it comes to social media and how it effects the individual. The difficulty in this topic comes from the identification of such fake news itself.
+
+citet:[Hermida2012] analyses survey data relating to the impact social media has on news consumption, finding that social media has become a significant source of online news. Around two-fifths of the users surveyed said that they receive news from people they follow on various platforms, stating that they value social media because of the way it helps them keep up to date with news and events.
+
+An area of contention in this article revolves around how an individual's social circle "takes on the role of a news editor", promoting content that is seen as interesting, important or entertaining. The issue this can present relates to how individuals typically seek out things validate their core beliefs instead of choosing to be exposed to opposing viewpoints. There is a belief that this can potentially result in the news an individual consumes from social media becomes less diverse, opposing the self-reported view that social media makes individuals aware of a broader range of news.
+
+Similar to this study, citet:[Weeks2017] report on the perception they name "news-finds-me". This perception involves individuals on social media refraining from seeking out news and information, instead letting the news 'find them'. This involves the individual assuming that any significant news will eventually enter their feed through their social circle.
+
+This study shows that individuals that self-report having this perception are typically less knowledgeable about politics over time. Interestingly, the prevalence of the perception is positively correlated with news exposure on social media. This implies that the individuals who subscribe to 'news-finds-me' are more likely to be exposed to news on social media platforms, but less likely to feel the need to actively seek out the information presented to them.
+
+These two references show that social media can have an impact on the consumption and variety of news-related media that an individual consumes. There's still questions as to how this compares with people who seek out news on their own and whether or not social media can replace traditional news consumption. Further research on this topic should analyse how social media can affect the perception someone has on news and current events, along with the implications of relying on social media to consume news.
+
+=== Effects on Personal Relationships
+
+As covered earlier in this review, citet:[Strickland2014] comments on core themes about the effect social media can have. Additional themes illustrated in the thesis revolve around interpersonal relationships, and the effects social media can have on them. The two additional themes relate to social media's effects on both romantic relationships and platonic relationships.
+
+citet:[Strickland2014] states that social media has had a profound effect on how people interact with their social networks, claiming that friends and family can keep up to date through social media more efficiently compared with traditional social contact. This being said, it's unclear whether this has a positive or a negative affect, relating to potential perceived relational intrusion caused by relaxed privacy compared with face-to-face interactions.
+
+Additionally, social media can affect individuals' negatively based on a fear of missing out (FoMO). As described by citet:[Barry2017], FoMO involves anxiety and inadequacy relating to the content consumed on social media. According to citet:[Strickland2014], this can be exacerbated by the content that comes alongside platonic online relationships; posts from friends depicting holidays, parties, events, etc. This can result in an individual engaging in social comparison, potentially affecting their self-esteem and mental health.
+
+Similarly, romantic relationships are shown to be affected by social media, with this thesis taking time to explain links between general internet usage, social media usage and:
+
+- Increased reported conflict between partners
+- Increased jealousy
+- Elevated feelings of exclusion
+- Lower trust & commitment
+- Increased partner surveillance
+
+It's unclear whether there are any positive effects social media can have on relationships. citet:[Strickland2014] doesn't comment on any constructive impacts social media can have on romantic relationships. This being said, there are no direct comparisons between romantic partners that do use social media and those who don't; perhaps further research is required on this topic.
+
+citet:[Glaser2018] cover similar topics, studying the effects social media can have on social networking, describing the impacts social media can have on offline social capital (i.e. the value of face to face relationships) using two hypotheses:
+
+- The augmentation hypothesis argues that social media can be positive for building offline social capital, improving the availability of social support and improving mental health.
+- The displacement hypothesis argues the opposite, that social media can replacing offline social contact, damaging social capital, having a negative impact on mental health.
+
+These hypotheses seem to be fairly robust, with the study suggesting that either hypothesis is likely to apply for an individual engaging in online social contact. The study also found that social media use correlated somewhat with better mental health, suggesting that the augmentation hypothesis may be slightly more likely. Ultimately, citet:[Glaser2018] comment that it's possible that the effects social media and networking can have on mental health depends on user understanding and ability to use social media in a healthy way.
+
+These two sources both suggest the effects social media can have on interpersonal relationships are negative overall. Because of this, further research on this topic should attempt to identify healthy habits that can be constructive to both relationships and mental health, in order to suggest how social media can be used in a more healthy way.
+
+=== Literature Review Conclusion
+
+It's clear from this research that social media has the potential to be negative to mental health. What's unclear from these sources is exactly how social media can be used in a positive, constructive way, and what positive impacts are common and how they come about. The themes outlined in this review are core areas of contention that require additional understanding. Because of this, my primary research will relate to these three themes, asking questions about how social media impacts mental health directly, news consumption and social capital.
+
+Further research should aim to establish what contributes to a healthy experience online, in order to help suggest healthy habits in terms of social media usage, and how that differs from the common unhealthy habits.
+
+== Methodology
+
+Based on the three themes identified in the literature review, namely Mental Health, Interpersonal Relations and Understanding of Current Events, I created a survey to gauge the self-reported impact that social media can have on respondents. The questions in the survey relate to each of the themes outlined,with the phrasing being key to their inclusion; they're intended to try and gauge self-reported observations, rather than identify an absolute truth.
+
+- "How do these platforms impact how you feel about your overall mental health?"
+- "How do these platforms impact how you interact with people you know?"
+- "How do these platforms affect how you feel about news and current events?"
+
+The questions included in this survey mirror a Likert scale, usually a five-point scoring between positive and negative. To try and discourage neutral responses, I opted to remove the neutral choice from the questions. Additionally, an "other" answer was included, allowing respondents to enter "Neutral", or try to explain beyond the standard set of answers listed.
+
+- [ ] Very Positive
+- [ ] Positive
+- [ ] Negative
+- [ ] Very Negative
+- [ ] Other (Typed)
+
+Finally, the survey is split into three segments for various 'groups' of social media:
+
+- Group 1 is defined as the 'Media' group, relating to sites that require some form of content to be used, whether it's video-based or image-based. This group includes Youtube, Twitch, TikTok, Pinterest and Instagram.
+- Group 2 is defined as the 'Blogging' group, involving sites that revolve around blogging, micro-blogging or a forum structure, including Twitter, Reddit, Tumblr and Facebook.
+- Group 3 is defined as the 'Messaging' group, with platforms defined by their requirement for direct social contact in the form of messaging, including Snapchat, Messenger, Discord, WhatsApp and Telegram.
+
+These groups are designed to fit around different types of social media platforms, with distinct differences between the core type of content and interaction. The reasoning behind this distinction relates to the stratification of the data gathered. Having more variables involved when the data is gathered allows for more detailed conclusions to be drawn from the data.
+
+These three groups each included the questions outlined above, with branching implemented to skip over each group should the respondent not have any experience with the group. The figure below illustrates this branching, asking the questions "Do you have any experience with [this group]", and if not "Do you have any prior experiences with [this group]". This is intended to help gather meaningful data about current or prior usage of each group, without requiring respondents to answer for a group they haven't used.
+
+.An illustration of the branching implemented into the survey
+image::flowchart.png[An illustration of the branching implemented into the survey]
+
+This flowchart repeats for the other two groups, each repeating the questions, as well as asking which platforms are used by the respondent.
+
+== Results
+
+To analyse the results of the survey, I felt a model was required to help quantify the results. With more traditional Likert scale questions, the responses are quantified as numeric. In this implementation of the question, however, a conversion is required to fully quantify the results.
+
+With the numeric responses, it's simple to add values together, with a very simple algorithm for finding percentage-based index for the result. For this reason, it's essential to convert these non-numeric, and sometimes complex, answers into a numeric representation for easily handling. The algorithm I've used is as follows:
+
+[latexmath]
+++++
+\text{index} = \frac{b + 2c + 3d + 4e}{4(a+b+c+d+e)}
+++++
+
+- latexmath:[a] is the response count for "Very Negative"
+- latexmath:[b] is the response count for "Negative"
+- latexmath:[c] is the response count for "Neutral" & other unclear results
+- latexmath:[d] is the response count for "Positive"
+- latexmath:[e] is the response count for "Very Positive"
+
+Using this algorithm, a response comprised only of "Neutral" answers will score 50%. Any result under 50% indicates a greater quantity of negative answers, and any result over 50% indicates more positive answers. Using this model, it's possible to directly compare different groups of results.
+
+[cols="3,2,2,2,2,2,2"]
+.Group 1 (Media) Results
+|===
+|Question Set |Very Negative |Negative |Neutral |Positive |Very Positive |Positivity Index
+
+|Social Capital
+|0
+|1
+|24
+|22
+|0
+|61.17%
+
+|Mental Health
+|1
+|11
+|11
+|28
+|4
+|60.45%
+
+|Current Events
+|0
+|10
+|7
+|35
+|3
+|64.09%
+|===
+
+[cols="3,2,2,2,2,2,2"]
+.Group 2 (Blogging) Results
+|===
+|Question Set |Very Negative |Negative |Neutral |Positive |Very Positive |Positivity Index
+
+|Social Capital
+|0
+|4
+|19
+|35
+|0
+|63.36%
+
+|Mental Health
+|1
+|13
+|10
+|32
+|3
+|59.75%
+
+|Current Events
+|1
+|20
+|11
+|24
+|3
+|53.39%
+|===
+
+[cols="3,2,2,2,2,2,2"]
+.Group 3 (Messaging) Results
+|===
+|Question Set |Very Negative |Negative |Neutral |Positive |Very Positive |Positivity Index
+
+|Social Capital
+|0
+|1
+|6
+|52
+|1
+|72.08%
+
+|Mental Health
+|0
+|2
+|10
+|36
+|12
+|74.17%
+
+|Current Events
+|0
+|5
+|18
+|28
+|9
+|67.08%
+|===
+
+[cols="3,2,2,2,2"]
+.Average Index per Group & Question Set
+|===
+|Social Media Group |Social Capital Index |Mental Health Index |Current Events Index |Average Index (Mean)
+
+|Group 1 (Media)
+|61.17%
+|60.45%
+|64.09%
+|61.91%
+
+|Group 2 (Blogging)
+|63.36%
+|59.75%
+|53.39%
+|58.83%
+
+|Group 3 (Messaging)
+|72.08%
+|74.17%
+|67.08%
+|71.11%
+
+|Average per Set
+|65.54%
+|64.79%
+|61.52%
+|
+|===
+
+From these results, it's clear that there's some differences between the platforms involved, however less clear of a difference between the impact each platform has between each of the three question sets:
+
+- Based on the mean averages in Table 4, Group 2 and Group 3 are clearly distinct in their impact on the respondents as a whole, with Group 2 being the least positive, and Group 3 being the most positive.
+- While the averages for each question set are similar in Table 4, it's worth noting that the average for the Current Events index is slightly lower than the other two indexes thanks to the markedly lower values in both Group 2 and Group 3. It's unclear why this could be.
+
+== Discussion
+
+The numeric results from the Likert scale questions indicate that different social media platforms can have differing effects on the individual. It's seems that Messaging platforms have the best overall perceived impact on an individual based on the data, with Blogging platforms having the lest positive impact overall. It's unclear why this is, but it could relate to the direct and intentional nature of social contact, cutting down on relational intrusion as described by citet:[Strickland2014] and replacing it with 'truer' social interaction.
+
+Other factors that could contribute to this relate to the trustworthiness of the content the platform revolves around. Messaging applications rely on direct social contact, while Media platforms rely on produced content and with Blogging platforms taking on an editorial nature. The latter two platform types are therefore potentially less accessible or more manufactured, possibly impacting the trust an individual has in the content and usage of the platforms.
+
+As well as this, the prevalence of misinformation online could have a larger impact on the latter two platform types, with one user responding:
+
+NOTE: "Lots of impulsive sharing of non verified information on these platforms. It can be dangerous and causes unwarranted stress. I have silenced so many people in recent weeks for sharing negative or unverified content that scaremongers and spreads fear"
+
+This response indicates that some individuals are aware of the potential for misinformation on social media. The prevalence of "fake news" has entered the public consciousness in recent years, and it's unclear exactly what effect this has on the users of social media. The data gathered by this report suggests that some users are aware of the implications social media can have on their perception of current events, though exactly to what extent this occurs is unknown.
+
+The results from the long-form questions provide some additional insight into the impacts that individuals think social media has on them, with respondents frequently commenting on having a certain skillset when it comes to social media interaction, which supposedly can help shift the interaction to be more positive overall.
+
+In relation to Group 1 (Media) platforms, one respondent answers:
+
+NOTE: "By being careful with who I ask to connect with and who I accept into my online social circles I generally see positivity, support for others and kindness."
+
+This philosophy, mirrored by a handful of other respondents, indicates that self-moderating your social circle can promote positive interactions and generally make social media more practical for everyday use. This being said, another respondent in the Group 1 question responded saying:
+
+NOTE: "I have curated my lists of followers and followings to make sure that all those people included are generally a positive influence for me (or at least interesting!) **so while this does turn my social media platforms into echo chambers, I am aware of this.** I feel this is the best way for me to use these platforms in a healthy way."
+
+This response hints at the potential negative impacts that this philosophy could have. The bolded section illustrates that the self-moderation process can potentially result in 'echo chambers' being formed, a phenomenon where the social network someone interacts with potentially reinforces their views through confirmation bias, facilitated by a lack of opposing views. It's unclear as to what extent this impacts social media users and society as a whole cite:[Barberá2015].
+
+Overall, it's unclear exactly why the survey results differ from the established understanding of the effects social media have, outlined in the Literature Review segment; established literature states that generally social media is understood to be negative for mental health overall, while the responses from the survey in this report generally showed that people think of social media has a positive impact on their lives.
+
+It's possible that the reasoning for this relates to a disparity between self-reported information and information observed in a different type of study; citet:[Barry2017], for example, analyses symptoms of mental health conditions instead of asking for individuals to self-report on their mental health overall.
+
+Interestingly, the average positivity index for each respondent based on the amount of time spent on social media is very similar:
+
+.Averages of positivity index per time-spent group
+image::hours.png[pdfwidth=60%]
+
+This chart has added lines for the averages of each group, which shows that there is very little correlation, with a latexmath:[p] of latexmath:[-0.03377] and an latexmath:[n] of latexmath:[0.84345].
+
+This indicates that, according to this data, spending more time on social media does not necessarily result in a worse experience. This being said, the chart shows that there may be a larger range of outcomes for those who spend more time online, with the `4+ hours` group having the largest range between the best result and the worst result out of any other demographic. Similarly, the `Less than 1` hours group, excluding a single outlier, has the smallest range.
+
+== Conclusion & Recommendations
+
+Overall, it seems as though social media and mental health still have a complex relationship that is not well understood. The responses from the survey indicate opposing viewpoints to what is established in other literature, with no clear explanation. It's possible that users of social media are not aware of the impact their own usage has, requiring further research to be established fully.
+
+Further research should aim to identify further evidence as to what the extent of the effects outlined could be. A few of the remaining questions are:
+
+- Is spending more time on social media inherently linked to a difference in the effect social media has?
+- Why do individuals report having positive experiences on social media if the established body of work shows they're more likely to suffer from mental health problems with the use of social media?
+- What is inherently different about social media platforms based around messaging versus others?
+
+While these questions remain unanswered, it's possible to draw conclusions from the data collected in the survey, and apply those conclusions in the context of providing advice about social media use:
+
+.Recommendations
+. The potential risks of consuming news media online should be stressed to individuals attending the College.
+. Blogging sites should potentially be restricted or further restricted on College networks due to the potential negative impacts.
+. The potential risks of spending too much time online should be explained to students.
+. The College, alongside the greater research body, should focus on trying to further establish the impacts that social media can have through studies and analyses.
+
+== References
+
+bibliography::[]

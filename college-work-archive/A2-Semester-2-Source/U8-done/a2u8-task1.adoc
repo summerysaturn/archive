@@ -1,0 +1,55 @@
+= MAC Addresses & DHCP Reservations
+:bibliography-database: u8.bib
+:bibliography-style: harvard-cite-them-right
+:bibliography-locale: en-GB
+:bibliography-sort: []
+:icons: font
+Charlotte Ward
+
+== What is a MAC address?
+
+MAC Addresses are small, read-only strings contained within networking hardware that can be used to identify devices. While MAC addresses are not 'truly' unique cite:[howToGeek:0], they're commonly used to identify specific devices using the assumption that they are. They are also used as a part of multiple protocols' functionality:
+
+- ARP translates a local IP address into a MAC address.
+- DHCP assigns leases to devices using MAC addresses for identification.
+
+cite:[howToGeek:1]
+
+Usually, MAC addresses are most useful for LAN networking, with MAC addresses only being available to other devices without a router in-between. They cannot be used for routing for this reason. Another use for them involves device authentication, but this isn't related to networking cite:[howtogeek1].
+
+== What is ARP?
+
+ARP, or Address Resolution Protocol, is a protocol that serves as an address translator for converting a local IP address into a MAC address. It functions by sending a request, with the recipient responding with it's own MAC address. ARP is used as a part of Ethernet, Wi-Fi, and physical network topologies such as Token Ring cite:[lifeWire:3]. ARP isn't used directly with DHCP, however, which has it's own system for acquiring client MAC addresses. Instead, DHCP is configured to use ARP to identify if an address has been allocated already either statically or by another DHCP server cite:[stackOverflow:0]+[stackOverflow:1].
+
+== What is DHCP?
+
+Computers on any network require IP addresses for network communication. Internet Service Providers and local networks both assign these addresses using DHCP, or Dynamic Host Configuration Protocol. This protocol is designed to assign IP addresses to devices within a network alongside the implementation of subnet masks, DNS servers, and default gateways. All of these affect IP assignment and communication cite:[lifeWire:0].
+
+DHCP usually works by assigning IP addresses dynamically, a process designed to prevent multiple devices from having the same IP address. This involves reserving IP addresses with a lease, which allows the IP to be reserved to the system for a fixed amount of time. This lease is used to effectively reserve addresses for a short amount of time, using a stored MAC address to identify which lease links up to which client cite:[lifeWire:1].
+
+== What is a DHCP reservation?
+
+Unlike static IP addresses, DHCP reservations involve configuration on the DHCP server, rather than the client computer. Static IPs are set manually on a NIC (Network Interface Card), completely bypassing DHCP cite:[lifeWire:2]. Instead, DHCP reservations work by having the DHCP server itself assign a static IP for a client with a known MAC address. As with DHCP leases, DHCP reservations work by reserving an IP address to a specific MAC address, assigning the IP address to a device only if it shares that MAC address cite:[lifeHacker:1].
+
+This system has a few advantages and drawbacks when compared with traditional static IP addresses:
+
+.Advantages
+- DHCP reservations can be changed from the server directly, rather than requiring a static IP to be set up on every device.
+- Reservation doesn't require client configuration, meaning settings can be replaced without per-device configuration.
+- DHCP configures DNS, subnet masks, and the default gateway automatically, whereas static IPs require manual configuration.
+- The DHCP server or router itself contains a table of all reserved addresses, while static IP addresses require documentation.
+
+.Disadvantages
+- IP assignment requires the DHCP server, whereas static IPs can function without active DHCP.
+- Not all routers or networks support DHCP configuration.
+- Some DHCP servers require the MAC address to be entered manually.
+
+cite:[stephenWagner:0]+[flexRadio:0]
+
+== Conclusion
+
+DHCP reservations are easier to configure and utilise when compared with Static IP addresses, being better suited to non-critical systems as a result of the requirement for a functioning DHCP server, along with a reserved IP address, which helps to mitigate the possibility of collisions. Because of this, DHCP reservations are the perfect solution to the problem outlined.
+
+== Reference List
+
+bibliography::[]
